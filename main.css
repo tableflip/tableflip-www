@@ -323,7 +323,7 @@ main {
 }
 .piece .full {
   overflow: hidden;
-  transition: all 0.25s ease-out;
+  transition: all 0.8s ease-out;
 }
 .piece .open-arrow {
   display: block;
@@ -333,38 +333,33 @@ main {
   display: none;
 }
 .piece.open .container {
-  padding: 100px 15px;
+  /*padding: 100px 15px;*/
 }
 .piece.open .container {
 }
-.piece.closed .container {
+.piece .container {
   padding: 30px 15px;
 }
 .piece.closed {
   cursor: pointer;
 }
 .piece.closed .full {
-  height: 0;
+  max-height: 0;
 }
 .piece.open .full {
   height: auto;
 }
 @media (min-width: 720px) {
   .piece.open .full {
-    height: 500px;
+    max-height: 2000px;
   }
 }
-
-
 
 #piece-nodebots {
   background: #F8E01E;
 }
 #piece-meteor {
   background: #000;
-}
-#piece-meteor.open .full {
-  height: 800px;
 }
 #piece-meteor.open .full iframe {
   margin: 30px auto !important;

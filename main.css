@@ -100,11 +100,13 @@ header {
   font-size: 48px;
   top: 92px;
   left: -78px;
+  -webkit-transform: rotate(-6deg);
   transform: rotate(-6deg);
   transition: all 0.25s ease-out;
 }
 .scrolled #logo a::after {
   top: -100px;
+  -webkit-transform: rotate(15deg);
   transform: rotate(15deg);
 }
 #logo img {
@@ -208,25 +210,30 @@ nav a img {
 }
 #we-build li:nth-child(1) span {
   font-size: 36px;
+  -webkit-transform: rotate(1deg);
   transform: rotate(1deg);
 }
 #we-build li:nth-child(2) span {
   font-size: 20px;
+  -webkit-transform: rotate(-3deg);
   transform: rotate(-3deg);
   left: 128px;
 }
 #we-build li:nth-child(3) span {
   font-size: 24px;
+  -webkit-transform: rotate(9deg);
   transform: rotate(9deg);
   left: 178px;
 }
 #we-build li:nth-child(4) span {
   font-size: 24px;
+  -webkit-transform: rotate(-9deg);
   transform: rotate(-9deg);
   left: 196px;
 }
 #we-build li:nth-child(5) span {
   font-size: 20px;
+  -webkit-transform: rotate(3deg);
   transform: rotate(3deg);
   left: 155px;
 }

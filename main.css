@@ -240,7 +240,6 @@ nav a img {
 main {
   min-height: 1000px;
 }
-
 .container {
   margin: 0 auto;
   padding: 100px 15px;
@@ -249,7 +248,6 @@ main {
 .container:first-child {
   margin-top: 0;
 }
-
 #sec-about {
   background: #18C8A0;
 }
@@ -289,7 +287,6 @@ main {
   height: 200px;
 }
 
-
 .piece.light h2, .piece.light blockquote p, .piece.light strong {
   color: #fff;
 }
@@ -307,7 +304,7 @@ main {
   content: "";
   display: block;
   position: relative;
-  top: 0;
+  top: -40px;
   margin: -50px 0 0;
   padding-bottom: 30px;
   background: transparent url(img/icon-arrow-down-dark.svg) no-repeat scroll center center;
@@ -319,7 +316,7 @@ main {
   background-image: url(img/icon-arrow-down-light.svg);
 }
 .piece.closed:hover::after {
-  top: 5px;
+  top: -35px;
 }
 .piece .full {
   overflow: hidden;
@@ -332,13 +329,9 @@ main {
 .piece.open .open-arrow {
   display: none;
 }
-.piece.open .container {
-  /*padding: 100px 15px;*/
-}
-.piece.open .container {
-}
 .piece .container {
   padding: 30px 15px;
+  padding: 100px 15px;
 }
 .piece.closed {
   cursor: pointer;

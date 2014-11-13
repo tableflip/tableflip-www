@@ -105,9 +105,8 @@ header {
   transition: all 0.25s ease-out;
 }
 .scrolled #logo a::after {
-  top: -100px;
-  -webkit-transform: rotate(15deg);
-  transform: rotate(15deg);
+  -webkit-transform: rotate(15deg) translate3d(-50px, -200px, 0);
+  transform: rotate(15deg) translate3d(-50px, -200px, 0);
 }
 #logo img {
   width: 100%;

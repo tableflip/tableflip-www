@@ -398,6 +398,10 @@ main {
     background: #f45340 url(img/bg-piece-nodeschool.jpg) no-repeat scroll center center;
     background-size: cover;
   }
+  #piece-sam {
+    background: #00877a url(img/bg-piece-sam.jpg) no-repeat scroll center center;
+    background-size: cover;    
+  }
 }
 
 #mugshots {

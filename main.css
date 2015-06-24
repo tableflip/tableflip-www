@@ -382,6 +382,10 @@ main {
     background: #51346D url(img/bg-piece-polestar.jpg) no-repeat scroll center center;
     background-size: cover;
   }
+  #piece-svs {
+    background: #51346D url(img/bg-piece-svs.jpg) no-repeat scroll center center;
+    background-size: cover;    
+  }
   #piece-intimate-objects {
     background: #fff url(img/bg-piece-io.jpg) no-repeat scroll center center;
     background-size: cover;
@@ -393,6 +397,10 @@ main {
   #piece-nodeschool {
     background: #f45340 url(img/bg-piece-nodeschool.jpg) no-repeat scroll center center;
     background-size: cover;
+  }
+  #piece-sam {
+    background: #00877a url(img/bg-piece-sam.jpg) no-repeat scroll center center;
+    background-size: cover;    
   }
 }
 

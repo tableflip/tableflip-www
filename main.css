@@ -360,6 +360,9 @@ main {
 #piece-polestar {
   background: #51346D;
 }
+#piece-svs {
+  background: #F77E16
+}
 #piece-intimate-objects {
   background: #fff;
 }
@@ -383,8 +386,8 @@ main {
     background-size: cover;
   }
   #piece-svs {
-    background: #51346D url(img/bg-piece-svs.jpg) no-repeat scroll center center;
-    background-size: cover;    
+    background: #F77E16 url(img/bg-piece-svs.jpg) no-repeat scroll center center;
+    background-size: cover;
   }
   #piece-intimate-objects {
     background: #fff url(img/bg-piece-io.jpg) no-repeat scroll center center;
@@ -400,7 +403,7 @@ main {
   }
   #piece-sam {
     background: #00877a url(img/bg-piece-sam.jpg) no-repeat scroll center center;
-    background-size: cover;    
+    background-size: cover;
   }
 }
 

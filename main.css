@@ -286,6 +286,9 @@ main {
   width: 100%;
   height: 200px;
 }
+#sec-learn {
+  text-align: center;
+}
 
 .piece.light h2, .piece.light blockquote p, .piece.light strong {
   color: #fff;

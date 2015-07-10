@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>TABLEFLIP - learn from us</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="//fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="learn.css">
+</head>
+  <body class="learn">
+     <header>
+      <div id="logo">
+        <a href="/" title="(╯°□°）╯︵ ┻━┻"><img src="img/logo-stroke.svg"></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about" title="About"><img src="img/icon-info.svg"><span>About</span></a></li>
+          <li><a href="#portfolio" title="Portfolio"><img src="img/icon-briefcase.svg"><span>Portfolio</span></a></li>
+          <li><a href="http://blog.tableflip.io/" title="Blog"><img src="img/icon-blog.svg"><span>Blog</span></a></li>
+          <li><a href="#contact" title="Contact"><img src="img/icon-phone.svg"><span>Contact</span></a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="learn">
+      <ul id="we-build">
+        <li><span>Learn from us</span></li>
+        <li><span>Node</span></li>
+        <li><span>Meteor</span></li>
+        <li><span>Javascript</span></li>
+      </ul>
+    </div>
+    <main>
+
+      <a name="codeschool"></a>
+      <div id="learn-codeschool" class="piece light closed">
+        <div class="container">
+          <h2>Code School</h2>
+          <p>We run one day workshops in Meteor, Javascript and node. These days are for beginners and developers.</p>
+          <div class="full">
+            <p>Each of our courses follows a similar format. In the morning we will school you in the TABLEFLIP classroom, with talks, live coding demos, and amazing diagrams on the whiteboard. We will provide lunch for you. In the afternoon things get more relaxed and you can play with what you learnt in the morning. You might have a project you are working on or you can chose from one of our pre-prepared exercises. We will come round and code pair with you. We finish the day with a big phat show and tell, high fives and air punches.</p>
+          </div>
+        </div>
+      </div>
+
+      <a name="meteor"></a>
+      <div id="learn-meteor" class="piece light closed">
+        <div class="container">
+          <h2>Meteor</h2>
+          <p>This course will have you building Meteor apps like a pro.</p>
+          <div class="full">
+            <p>You will learn about the declarative programming style that Meteor uses, and all the different ways to harness the live reactive quality of Meteor. We will spend some time looking at flow-router and flow- layout, so you can confidently structure scalable apps. Finally we’ll finish the session by wrapping a project in cordova and loading the Meteor project as a native app on a smart phone</p>
+          </div>
+        </div>
+      </div>
+
+      <a name="responsive"></a>
+      <div id="learn-javascript" class="piece deep closed">
+        <div class="container">
+          <h2>Responsive Design</h2>
+          <p>The course is all about responsive web design.</p>
+          <div class="full">
+            <p>All the things we have learnt about making awesome websites that work for all the devices you can imagine are distilled into this course. We start with customising bootstrap and laying down some responsive ground rules. We’ll share our house style and philosophy on the build step, and show you how to use simple npm scripts to compile and optimise all your front-end assets so they snap down to the device like a ninja.</p>
+          </div>
+        </div>
+      </div>
+
+      <a name="node"></a>
+      <div id="learn-node" class="piece light closed">
+        <div class="container">
+          <h2>Node</h2>
+          <p>This course will introduction you to node and some of the core programming patterns that we feel you cannot do without.</p>
+          <div class="full">
+            <p>Javascript has matured into a full stack programming language. You can write javascript on the server and in the client’s browser. You will learn to write tests with tape and create modules for the server and client. You will be introduced to underscore and async, tools to help you build readable code that correctly controls the node process. We will then have you using your own modules to build from scratch a simple node server that runs a little website.</p>
+          </div>
+        </div>
+      </div>
+
+      <a name="arduino"></a>
+      <div id="learn-arduino" class="piece deep closed">
+        <div class="container">
+          <h2>Arduino</h2>
+          <p>Spend the day with us making actual things, actually flash and spin with javascript.</p>
+          <div class="full">
+            <p>We build robots. We'll introduce you to the arduino prototyping board and the Johnny-five node library that you can use together to programme all the things. After a morning of instructions and experimenting with different physical components, you will spend the afternoon on assembling an awesome project of your choice. We’ll supply you with tools and materials to bring your ideas buzzing and flashing into life.</p>
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <footer>
+      &copy; 2014 TABLEFLIP Ltd. • All rights reserved.
+    </footer>
+  <script>
+  (function () {
+    var html = document.getElementsByTagName('html')[0]
+    var scrolled = false
+
+    setTimeout(function () { window.onscroll() })
+
+    function addClass (el, className) {
+      el.className = el.className.split(' ').concat(className).join(' ')
+    }
+
+    function removeClass (el, className) {
+      var classes = el.className.split(' ')
+      el.className = classes.filter(function (c) {
+        return c != className
+      }).join(' ')
+    }
+
+    window.onscroll = function () {
+      if (window.scrollY > 0 && !scrolled) {
+        addClass(html, 'scrolled')
+        scrolled = true
+      } else if (window.scrollY <= 0 && scrolled) {
+        removeClass(html, 'scrolled')
+        scrolled = false
+      }
+    }
+
+    var pieces = document.querySelectorAll('.piece')
+
+    ;[].forEach.call(pieces, function (piece) {
+      piece.addEventListener('click', function (e) {
+        if (piece.className.indexOf('closed') > -1) {
+          piece.className = piece.className.replace('closed', 'open')
+        }
+      })
+    })
+  })()
+  </script>
+  </body>
+</html>

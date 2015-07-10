@@ -1,0 +1,23 @@
+p {
+  line-height: 1.4em;
+}
+
+#learn {
+  position: relative;
+  margin-top: 60px;
+  background: url(img/bg-learn-hero-sm.jpg) no-repeat scroll center center;
+  background-size: cover;
+  height: 300px;
+}
+@media (min-width: 720px) {
+  #learn {
+    background-image: url(img/bg-learn-hero.jpg);
+    height: 500px;
+  }
+}
+#learn-codeschool { background-color: rgb(242,84,70); }
+#learn-meteor { background-color: rgb(0,0,0); }
+#learn-node { background-color: rgb(26,211,173); }
+#learn-javascript { background-color: rgb(242,84,70); }
+#learn-arduino { background-color: rgb(248,231,28); }
+.deep {color: rgba(0,0,0,0.7);}

@@ -1,6 +1,5 @@
-p {
-  line-height: 1.4em;
-}
+span.tito-badge-link {display: none;}
+p {line-height: 1.4em;}
 
 #learn {
   position: relative;
@@ -9,15 +8,55 @@ p {
   background-size: cover;
   height: 300px;
 }
+#learn-codeschool { background-color: rgb(242,84,70); }
+#learn-meteor { background-color: rgb(0,0,0); }
+#learn-node { background-color: rgb(26,211,173); }
+#learn-responsive { background-color: #51346D; }
+#learn-arduino { background-color: rgb(248,231,28); }
+
+.feature-image {
+  height: 215px;
+  width: 108%;
+  margin-left: -4%;
+  margin-bottom: 1em;
+  background-size: 100% auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 2px;
+}
+.feature-responsive {background-image: url(img/fg-oli-hay.jpg);}
+.feature-arduino {background-image: url(img/fg-liam-workshop.jpg);}
+.feature-codeschool {background-image: url(img/fg-nodeschool.jpg);}
+
+.payment {padding-top: 70px;}
+
+.tito-wrapper {
+  background: rgba(26,211,173,1);
+  max-width: 360px;
+}
+.tito-ticket-quantity-field, .tito-wrapper {border: 1px solid white;}
+.tito-ticket-name-wrapper {border-bottom: 1px solid white;}
+.tito-ticket-price-quantity-wrapper, .tito-ticket-status, .tito-ticket-status-sold-out {
+  border-bottom: 1px solid white;
+}
+
 @media (min-width: 720px) {
   #learn {
     background-image: url(img/bg-learn-hero.jpg);
     height: 500px;
   }
+  .feature-image {
+    width: 100%;
+    margin-left: 0;
+  }
+  .feature-responsive {
+    background-position: center -90px;
+  }
+  .feature-codeschool {
+    background-position: center -190px;
+  }
+  .feature-arduino {
+    background-position: center -170px;
+  }
+
 }
-#learn-codeschool { background-color: rgb(242,84,70); }
-#learn-meteor { background-color: rgb(0,0,0); }
-#learn-node { background-color: rgb(26,211,173); }
-#learn-javascript { background-color: rgb(242,84,70); }
-#learn-arduino { background-color: rgb(248,231,28); }
-.deep {color: rgba(0,0,0,0.7);}

@@ -5,20 +5,23 @@
 <title>TABLEFLIP - learn from us</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="//fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href='https://css.tito.io/v1' />
 <link rel="stylesheet" href="main.css">
 <link rel="stylesheet" href="learn.css">
+<script src='https://js.tito.io/v1' async></script>
 </head>
   <body class="learn">
      <header>
       <div id="logo">
-        <a href="/" title="(╯°□°）╯︵ ┻━┻"><img src="img/logo-stroke.svg"></a>
+        <a href="index.html" title="(╯°□°）╯︵ ┻━┻"><img src="img/logo-stroke.svg"></a>
       </div>
       <nav>
         <ul>
-          <li><a href="#about" title="About"><img src="img/icon-info.svg"><span>About</span></a></li>
-          <li><a href="#portfolio" title="Portfolio"><img src="img/icon-briefcase.svg"><span>Portfolio</span></a></li>
+          <li><a href="index.html#about" title="About"><img src="img/icon-info.svg"><span>About</span></a></li>
+          <li><a href="index.html#portfolio" title="Portfolio"><img src="img/icon-briefcase.svg"><span>Portfolio</span></a></li>
+          <li><a href="#learn" title="Learn"><img src="img/icon-mortor.svg"><span>Learn</span></a></li>
           <li><a href="http://blog.tableflip.io/" title="Blog"><img src="img/icon-blog.svg"><span>Blog</span></a></li>
-          <li><a href="#contact" title="Contact"><img src="img/icon-phone.svg"><span>Contact</span></a></li>
+          <li><a href="index.html#contact" title="Contact"><img src="img/icon-phone.svg"><span>Contact</span></a></li>
         </ul>
       </nav>
     </header>
@@ -32,13 +35,14 @@
     </div>
     <main>
 
-      <a name="codeschool"></a>
-      <div id="learn-codeschool" class="piece light closed">
+      <a name="learn"></a>
+      <div id="learn-codeschool" class="piece light open">
         <div class="container">
           <h2>Code School</h2>
           <p>We run one day workshops in Meteor, Javascript and node. These days are for beginners and developers.</p>
+          <div class="feature-image feature-codeschool"></div>
           <div class="full">
-            <p>Each of our courses follows a similar format. In the morning we will school you in the TABLEFLIP classroom, with talks, live coding demos, and amazing diagrams on the whiteboard. We will provide lunch for you. In the afternoon things get more relaxed and you can play with what you learnt in the morning. You might have a project you are working on or you can chose from one of our pre-prepared exercises. We will come round and code pair with you. We finish the day with a big phat show and tell, high fives and air punches.</p>
+            <p>Our courses run on the weekends in the mornings. On day one we will school you in the TABLEFLIP classroom, with talks, live coding demos, and amazing diagrams on the whiteboard. In the second morning things get more relaxed and you can play with what you learnt the previous day. You might have a project you are working on or you can chose from one of our pre-prepared exercises. We will come round and pair with you. We finish the weekend with a big phat show and tell, high fives and air punches. On both days we will provide a lunch for you.</p>
           </div>
         </div>
       </div>
@@ -50,15 +54,19 @@
           <p>This course will have you building Meteor apps like a pro.</p>
           <div class="full">
             <p>You will learn about the declarative programming style that Meteor uses, and all the different ways to harness the live reactive quality of Meteor. We will spend some time looking at flow-router and flow- layout, so you can confidently structure scalable apps. Finally we’ll finish the session by wrapping a project in cordova and loading the Meteor project as a native app on a smart phone</p>
+            <div class="payment">
+              <tito-widget event="codeschool/meteor-sept-2015"></tito-widget>
+            </div>
           </div>
         </div>
       </div>
 
       <a name="responsive"></a>
-      <div id="learn-javascript" class="piece deep closed">
+      <div id="learn-responsive" class="piece light closed">
         <div class="container">
-          <h2>Responsive Design</h2>
-          <p>The course is all about responsive web design.</p>
+          <h2>Love CSS</h2>
+          <p>The course is all about loving css and laying out beautiful, responsive pages.</p>
+          <div class="feature-image feature-responsive"></div>
           <div class="full">
             <p>All the things we have learnt about making awesome websites that work for all the devices you can imagine are distilled into this course. We start with customising bootstrap and laying down some responsive ground rules. We’ll share our house style and philosophy on the build step, and show you how to use simple npm scripts to compile and optimise all your front-end assets so they snap down to the device like a ninja.</p>
           </div>
@@ -72,6 +80,9 @@
           <p>This course will introduction you to node and some of the core programming patterns that we feel you cannot do without.</p>
           <div class="full">
             <p>Javascript has matured into a full stack programming language. You can write javascript on the server and in the client’s browser. You will learn to write tests with tape and create modules for the server and client. You will be introduced to underscore and async, tools to help you build readable code that correctly controls the node process. We will then have you using your own modules to build from scratch a simple node server that runs a little website.</p>
+            <div class="payment">
+              <tito-widget event="codeschool/node-oct-2016"></tito-widget>
+            </div>
           </div>
         </div>
       </div>
@@ -81,11 +92,37 @@
         <div class="container">
           <h2>Arduino</h2>
           <p>Spend the day with us making actual things, actually flash and spin with javascript.</p>
+          <div class="feature-image feature-arduino"></div>
           <div class="full">
             <p>We build robots. We'll introduce you to the arduino prototyping board and the Johnny-five node library that you can use together to programme all the things. After a morning of instructions and experimenting with different physical components, you will spend the afternoon on assembling an awesome project of your choice. We’ll supply you with tools and materials to bring your ideas buzzing and flashing into life.</p>
           </div>
         </div>
       </div>
+
+    <a name="contact"></a>
+    <div id="sec-contact" class="section">
+      <div class="container">
+        <h1>Contact</h1>
+        <ul id="mugshots">  
+          <li><a href="https://github.com/alanshaw"><img src="https://en.gravatar.com/avatar/8ca838dbb449a1359b5a4eadd26abb42"></a></li>
+          <li><a href="https://github.com/olizilla"><img src="https://en.gravatar.com/avatar/1114a99d8da01f890f39c02bd2b1bfc3"></a></li>
+          <li><a href="https://github.com/richsilv"><img src="https://avatars0.githubusercontent.com/u/3180526?v=3&amp;s=80"></a></li>
+          <li><a href="https://github.com/liamwooding"><img src="https://avatars0.githubusercontent.com/u/1327356?v=3&amp;s=80"></a></li>
+          <li><a href="https://github.com/bmordan"><img src="https://avatars3.githubusercontent.com/u/4499581?v=3&amp;s=80"></a></li>
+        </ul>
+        <p>Get in contact with us for any reason. Fire an email to <a href="mailto:hello@tableflip.io">hello@tableflip.io</a> and we'll mail you back as soon as we can.</p>
+        <p><a href="mailto:hello@tableflip.io" class="btn">&#8594; Email us</a></p>
+      </div>
+    </div>
+
+    <a name="address"></a>
+    <div id="sec-address" class="section">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2485.7772475944635!2d-0.06762329999995409!3d51.46224610000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487603bcd574cb6b%3A0x7ff8ee0aab796340!2s1a%2C+1+E+Dulwich+Rd%2C+London+SE15!5e0!3m2!1sen!2suk!4v1415827434779" frameborder="0" style="border:0"></iframe>
+      <div class="container vcard">
+        <p class="adr"><strong>Address:</strong> <span class="street-address">Unit 1a, 1 East Dulwich Road</span>, <span class="locality">London</span>, <span class="postal-code">SE22 9BA</span></p>
+        <p><a href="https://www.google.co.uk/maps/place/1+E+Dulwich+Rd,+London+SE15/@51.4622542,-0.0675658,17z/data=!4m7!1m4!3m3!1s0x487603bcd574cb6b:0x275451ab9158a674!2s1+E+Dulwich+Rd,+London+SE15!3b1!3m1!1s0x487603bcd574cb6b:0x275451ab9158a674" class="btn" target="_blank">&#8594; View on Google Maps</a></p>
+      </div>
+    </div> 
 
     </main>
     <footer>
@@ -108,7 +145,6 @@
         return c != className
       }).join(' ')
     }
-
     window.onscroll = function () {
       if (window.scrollY > 0 && !scrolled) {
         addClass(html, 'scrolled')

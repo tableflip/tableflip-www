@@ -157,17 +157,21 @@ nav a img {
   nav ul {
     text-align: right;
   }
+  nav li:nth-child(1) {display: none;}
   nav li:nth-child(3), nav li:nth-child(4) {
     float: none;
   }
   nav a {
-    padding: 15px;
+    padding: 15px 5px;
   }
   nav a span {
     position: relative;
     left: 0;
     padding: 0 0 0 5px;
   }
+}
+@media (min-width: 1080px) {
+  nav li:nth-child(1) {display: inline-block;}
 }
 #hero {
   position: relative;

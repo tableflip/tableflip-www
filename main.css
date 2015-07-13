@@ -384,25 +384,25 @@ main {
     background-image: url(img/bg-piece-nodebots.jpg);
   }
   #piece-meteor {
-    background: url(img/bg-piece-meteor.jpg);
+    background-image: url(img/bg-piece-meteor.jpg);
   }
   #piece-polestar {
-    background: url(img/bg-piece-polestar.jpg);
+    background-image: url(img/bg-piece-polestar.jpg);
   }
   #piece-svs {
-    background: url(img/bg-piece-svs.jpg);
+    background-image: url(img/bg-piece-svs.jpg);
   }
   #piece-intimate-objects {
-    background: url(img/bg-piece-io.jpg);
+    background-image: url(img/bg-piece-io.jpg);
   }
   #piece-driift {
-    background: url(img/bg-piece-driift.jpg);
+    background-image: url(img/bg-piece-driift.jpg);
   }
   #piece-nodeschool {
-    background: url(img/bg-piece-nodeschool.jpg);
+    background-image: url(img/bg-piece-nodeschool.jpg);
   }
   #piece-sam {
-    background: url(img/bg-piece-sam.jpg);
+    background-image: url(img/bg-piece-sam.jpg);
   }
 }
 

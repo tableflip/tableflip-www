@@ -372,38 +372,37 @@ main {
 #piece-nodeschool {
   background: #f45340;
 }
+#piece-sam {
+  background: #00877a;
+}
 @media (min-width: 720px) {
-  #piece-nodebots {
-    background: #F8E01E url(img/bg-piece-nodebots.jpg) no-repeat scroll center center;
+  .piece {
+    background: no-repeat scroll center center;
     background-size: cover;
+  }
+  #piece-nodebots {
+    background-image: url(img/bg-piece-nodebots.jpg);
   }
   #piece-meteor {
-    background: #000 url(img/bg-piece-meteor.jpg) no-repeat scroll center center;
-    background-size: cover;
+    background: url(img/bg-piece-meteor.jpg);
   }
   #piece-polestar {
-    background: #51346D url(img/bg-piece-polestar.jpg) no-repeat scroll center center;
-    background-size: cover;
+    background: url(img/bg-piece-polestar.jpg);
   }
   #piece-svs {
-    background: #F77E16 url(img/bg-piece-svs.jpg) no-repeat scroll center center;
-    background-size: cover;
+    background: url(img/bg-piece-svs.jpg);
   }
   #piece-intimate-objects {
-    background: #fff url(img/bg-piece-io.jpg) no-repeat scroll center center;
-    background-size: cover;
+    background: url(img/bg-piece-io.jpg);
   }
   #piece-driift {
-    background: #1f6385 url(img/bg-piece-driift.jpg) no-repeat scroll center center;
-    background-size: cover;
+    background: url(img/bg-piece-driift.jpg);
   }
   #piece-nodeschool {
-    background: #f45340 url(img/bg-piece-nodeschool.jpg) no-repeat scroll center center;
-    background-size: cover;
+    background: url(img/bg-piece-nodeschool.jpg);
   }
   #piece-sam {
-    background: #00877a url(img/bg-piece-sam.jpg) no-repeat scroll center center;
-    background-size: cover;
+    background: url(img/bg-piece-sam.jpg);
   }
 }
 

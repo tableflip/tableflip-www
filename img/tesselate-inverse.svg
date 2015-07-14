@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="412px" height="374px" viewBox="0 0 412 374" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>tesselate-inverse</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="tesselate" sketch:type="MSLayerGroup" transform="translate(-103.000000, -109.000000)" stroke="#F25C51" stroke-width="14">
+            <path d="M206.449833,357.827338 L103.703806,417.16216 L0.902390438,357.827338 L0.902390438,239.102293 L103.703806,179.712069 L206.449833,239.102293 L206.449833,357.827338 L206.449833,357.827338 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+            <path d="M308.072343,179.115269 L205.838269,238.450091 L103.036853,179.115269 L103.036853,60.3902236 L205.838269,1 L308.584296,60.3902236 L308.072343,179.115269 L308.072343,179.115269 Z" id="Shape-2" sketch:type="MSShapeGroup"></path>
+            <path d="M411.742662,357.827338 L308.996637,417.16216 L206.195219,357.827338 L206.195219,239.102293 L308.996637,179.712069 L411.742662,239.102293 L411.742662,357.827338 L411.742662,357.827338 Z" id="Shape-5" sketch:type="MSShapeGroup"></path>
+            <path d="M308.328319,535.515268 L205.582293,594.850092 L102.780876,535.515268 L102.780876,416.790224 L205.582293,357.4 L308.328319,416.790224 L308.328319,535.515268 L308.328319,535.515268 Z" id="Shape-6" sketch:type="MSShapeGroup"></path>
+            <path d="M514.516384,179.115267 L411.770357,238.450091 L308.968941,179.115267 L308.968941,60.3902231 L411.770357,0.999999488 L514.516384,60.3902231 L514.516384,179.115267 L514.516384,179.115267 Z" id="Shape-7-Copy-2" sketch:type="MSShapeGroup"></path>
+            <path d="M514.516384,535.515268 L411.770357,594.850092 L308.968941,535.515268 L308.968941,416.790224 L411.770357,357.4 L514.516384,416.790224 L514.516384,535.515268 L514.516384,535.515268 Z" id="Shape-7-Copy-5" sketch:type="MSShapeGroup"></path>
+            <path d="M617.290105,357.827337 L514.544078,417.162161 L411.742662,357.827337 L411.742662,239.102293 L514.544078,179.712069 L617.290105,239.102293 L617.290105,357.827337 L617.290105,357.827337 Z" id="Shape-7-Copy-6" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

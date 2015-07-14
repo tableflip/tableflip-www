@@ -8,7 +8,12 @@ p {line-height: 1.4em;}
   background-size: cover;
   height: 300px;
 }
-#learn-codeschool { background-color: rgb(242,84,70); }
+
+#learn-codeschool {
+  background: rgb(242,84,70) url(img/tesselate-inverse.svg);
+  background-size: 22% auto;
+  background-attachment: fixed;
+}
 #learn-meteor { background-color: rgb(0,0,0); }
 #learn-node { background-color: rgb(26,211,173); }
 #learn-responsive { background-color: #51346D; }
@@ -16,8 +21,8 @@ p {line-height: 1.4em;}
 
 .feature-image {
   height: 215px;
-  width: 108%;
-  margin-left: -4%;
+  width: 110%;
+  margin-left: -5%;
   margin-bottom: 1em;
   background-size: 100% auto;
   background-position: center center;
@@ -28,17 +33,31 @@ p {line-height: 1.4em;}
 .feature-arduino {background-image: url(img/fg-liam-workshop.jpg);}
 .feature-codeschool {background-image: url(img/fg-nodeschool.jpg);}
 
-.payment {padding-top: 70px;}
+.payment {
+  padding-top: 70px;
+  vertical-align: middle;
+}
+.coming-soon {
+  width: 80%;
+  margin: 0 auto 3%;
+  max-width: 280px;
+  text-align: center;
+  background-color: rgba(255,255,255,0.75);
+  padding: 9px;
+  transform: rotate(3deg);
+  box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.45);
+}
 
 .tito-wrapper {
   background: rgba(26,211,173,1);
   max-width: 360px;
+  border-radius: 2px;
 }
 .tito-ticket-quantity-field, .tito-wrapper {border: 1px solid white;}
 .tito-ticket-name-wrapper {border-bottom: 1px solid white;}
-.tito-ticket-price-quantity-wrapper, .tito-ticket-status, .tito-ticket-status-sold-out {
-  border-bottom: 1px solid white;
-}
+.tito-ticket-name-wrapper .tito-tickets-remaining {background: none; border:none;}
+.tito-ticket-price-quantity-wrapper, .tito-ticket-status, .tito-ticket-status-sold-out {border-bottom: 1px solid white;}
+.tito-submit {border: none;}
 
 @media (min-width: 720px) {
   #learn {

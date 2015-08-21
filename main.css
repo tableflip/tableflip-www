@@ -375,6 +375,9 @@ main {
 #piece-sam {
   background: #00877a;
 }
+#piece-sow {
+  background-color: #F01616;
+}
 @media (min-width: 720px) {
   .piece {
     background: no-repeat scroll center center;
@@ -403,6 +406,9 @@ main {
   }
   #piece-sam {
     background-image: url(img/bg-piece-sam.jpg);
+  }
+  #piece-sow{
+    background-image: url(img/bg-piece-sow.jpg);
   }
 }
 

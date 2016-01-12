@@ -18,12 +18,13 @@ body {
   background-size: 10% auto;
   color: #4A4A4A;
 }
-h1 {
+h1, h2, h3, h4 {
   font-family: Helvetica Neue, Helvetica, sans-serif;
+}
+h1 {
   font-size: 36px;
 }
 h2 {
-  font-family: Helvetica Neue, Helvetica, sans-serif;
   font-size: 30px;
   margin: 20px 0;
 }
@@ -257,7 +258,7 @@ main {
     background-size: cover;
   }
 }
-#sec-about h1, #sec-about blockquote p, #sec-about strong {
+#sec-about h1, #sec-about h4, #sec-about blockquote p, #sec-about strong {
   color: #fff;
 }
 #sec-about p {

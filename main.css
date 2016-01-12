@@ -386,6 +386,9 @@ main {
   #piece-nodebots {
     background-image: url(img/bg-piece-nodebots.jpg);
   }
+  #piece-kitmapper {
+    background-image: url(img/bg-piece-kitmapper.jpg);
+  }
   #piece-meteor {
     background-image: url(img/bg-piece-meteor.jpg);
   }

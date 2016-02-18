@@ -345,6 +345,9 @@ main {
 #piece-meteor {
   background-color: #000;
 }
+#piece-meteor img {
+  width: 100px;
+}
 #piece-meteor.open .full iframe {
   margin: 30px auto !important;
 }
@@ -380,6 +383,10 @@ main {
   #piece-meteor {
     background-image: url(img/bg-piece-meteor.jpg);
   }
+  #piece-meteor img {
+    float: left;
+    margin: 1em 1em 1em 0;
+  }
   #piece-polestar {
     background-image: url(img/bg-piece-polestar.jpg);
   }
@@ -398,7 +405,7 @@ main {
   #piece-sam {
     background-image: url(img/bg-piece-sam.jpg);
   }
-  #piece-sow{
+  #piece-sow {
     background-image: url(img/bg-piece-sow.jpg);
   }
 }

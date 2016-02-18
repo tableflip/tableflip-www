@@ -1,0 +1,44 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title TABLEFLIP - we build websites, apps, robots and community
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(href='https://fonts.googleapis.com/css?family=Noto+Serif', rel='stylesheet')
+    link(rel='stylesheet', href='main.css')
+    script.
+      (function(w,i,z,a,r,d,y){w['GoogleAnalyticsObject']=r;w[r]=w[r]||function(){
+      (w[r].q=w[r].q||[]).push(arguments)},w[r].l=1*new Date();d=i.createElement(z),
+      y=i.getElementsByTagName(z)[0];d.async=1;d.src=a;y.parentNode.insertBefore(d,y)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-52178211-3', 'auto');
+      ga('send', 'pageview');
+  body
+    header
+      #logo
+        a(href='/', title='(╯°□°）╯︵ ┻━┻')
+          img(src='img/tableflip.min.svg')
+      nav
+        ul
+          li
+            a(href='#about', title='About')
+              img(src='img/icon-info.svg')
+              span About
+          li
+            a(href='#portfolio', title='Portfolio')
+              img(src='img/icon-briefcase.svg')
+              span Portfolio
+          li
+            a(href='http://blog.tableflip.io/', title='Blog')
+              img(src='img/icon-blog.svg')
+              span Blog
+          li
+            a(href='#contact', title='Contact')
+              img(src='img/icon-phone.svg')
+              span Contact
+    
+    block content
+    
+    footer &copy; 2015 TABLEFLIP Ltd. • All rights reserved.
+    
+    block scripts

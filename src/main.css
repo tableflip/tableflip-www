@@ -8,7 +8,6 @@
          url('font/varelaround-regular-webfont.svg#varela_roundregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 body {
   font-family: "Noto Serif", serif;
@@ -100,12 +99,10 @@ header {
   font-size: 48px;
   top: 92px;
   left: -78px;
-  -webkit-transform: rotate(-6deg);
   transform: rotate(-6deg);
   transition: all 0.25s ease-out;
 }
 .scrolled #logo a::after {
-  -webkit-transform: rotate(15deg) translate3d(-50px, -200px, 0);
   transform: rotate(15deg) translate3d(-50px, -200px, 0);
 }
 #logo img {
@@ -113,7 +110,6 @@ header {
   transition: all 0.25s ease-out;
 }
 .scrolled #logo img {
-  -webkit-transform: scale(0.73, 0.73) translate3d(0, -20px, 0);
   transform: scale(0.73, 0.73) translate3d(0, -20px, 0);
 }
 nav {
@@ -210,30 +206,25 @@ nav a img {
 }
 #we-build li:nth-child(1) span {
   font-size: 36px;
-  -webkit-transform: rotate(1deg);
   transform: rotate(1deg);
 }
 #we-build li:nth-child(2) span {
   font-size: 20px;
-  -webkit-transform: rotate(-3deg);
   transform: rotate(-3deg);
   left: 128px;
 }
 #we-build li:nth-child(3) span {
   font-size: 24px;
-  -webkit-transform: rotate(9deg);
   transform: rotate(9deg);
   left: 178px;
 }
 #we-build li:nth-child(4) span {
   font-size: 24px;
-  -webkit-transform: rotate(-9deg);
   transform: rotate(-9deg);
   left: 196px;
 }
 #we-build li:nth-child(5) span {
   font-size: 20px;
-  -webkit-transform: rotate(3deg);
   transform: rotate(3deg);
   left: 155px;
 }

@@ -340,31 +340,31 @@ main {
 }
 
 #piece-nodebots {
-  background: #F8E01E;
+  background-color: #F8E01E;
 }
 #piece-meteor {
-  background: #000;
+  background-color: #000;
 }
 #piece-meteor.open .full iframe {
   margin: 30px auto !important;
 }
 #piece-polestar {
-  background: #51346D;
+  background-color: #51346D;
 }
 #piece-svs {
-  background: #F77E16
+  background-color: #F77E16
 }
 #piece-intimate-objects {
-  background: #fff;
+  background-color: #fff;
 }
 #piece-driift {
-  background: #1f6385;
+  background-color: #1f6385;
 }
 #piece-nodeschool {
-  background: #f45340;
+  background-color: #f45340;
 }
 #piece-sam {
-  background: #00877a;
+  background-color: #00877a;
 }
 #piece-sow {
   background-color: #F01616;

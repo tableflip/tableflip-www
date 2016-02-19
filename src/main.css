@@ -339,6 +339,9 @@ main {
   }
 }
 
+#piece-kitmapper {
+  background-color: #f05d4a;
+}
 #piece-nodebots {
   background-color: #F8E01E;
 }
@@ -376,6 +379,9 @@ main {
   .piece {
     background: no-repeat scroll center center;
     background-size: cover;
+  }
+  #piece-kitmapper {
+    background-image: url(img/bg-piece-kitmapper.jpg);
   }
   #piece-nodebots {
     background-image: url(img/bg-piece-nodebots.jpg);

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cd dist && instant",
+    "start": "cd dist && instant --port 3333",
     "html": "jade src/index.jade --out dist",
     "css": "postcss --use autoprefixer src/main.css -d dist",
     "copy": "rsync --delete -a src/favicon.ico src/font src/img dist",

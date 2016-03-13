@@ -8,14 +8,14 @@
     "start": "npm-run-all build watch",
     "postinstall": "npm run build",
     "build": "npm-run-all --parallel build:*",
-    "build:static": "rsync --delete -a src/favicon.ico src/font src/img dist",
+    "build:static": "rsync --delete -a src/favicon.ico src/img dist",
     "build:css": "postcss --use postcss-import --use postcss-cssnext src/main.css -d dist",
-    "build:html": "jade src/index.jade --out dist",
+    "build:html": "node build/jade",
     "watch": "npm-run-all --parallel watch:*",
     "watch:serve": "browser-sync start --files 'dist/*' --server dist",
     "watch:static": "nodemon -w src/favicon.ico -w src/img -w src/font -e '*' -x npm run build:static",
     "watch:css": "nodemon -w src -e css -x npm run build:css",
-    "watch:html": "nodemon -w src -e jade,md -x npm run build:html"
+    "watch:html": "nodemon -w pages -e jade,md -x npm run build:html"
   },
   "repository": {
     "type": "git",
@@ -37,6 +37,7 @@
     "postcss-import": "^8.0.2"
   },
   "devDependencies": {
-    "browser-sync": "^2.11.1"
+    "browser-sync": "^2.11.1",
+    "find": "^0.2.4"
   }
 }

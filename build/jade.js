@@ -30,9 +30,15 @@ find.file(/\index.jade$/, inputDir, (files) => {
     })
 
   tasks.forEach((task) => {
+    var content = {}
+    try {
+      content = require(task.content)
+    } catch (e) {
+      // is ok.
+    }
     var locals = {
       meta: task.meta,
-      content: require(task.content),
+      content: content,
       facts: require('../facts.json'),
       pretty: true
     }

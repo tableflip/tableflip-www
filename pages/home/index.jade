@@ -2,7 +2,7 @@ extends ../layout.jade
 
 block content
   #hero
-    #photo-grid
+    #sketchpad
     ul#we-build
       li
         span We Build
@@ -36,7 +36,8 @@ block content
         h2 TABLEFLIP Start
           sup Up!
         p 
-          i We're your technical co-founder.
+          i We're your 
+            span.nowrap technical co-founder.
         p Having worked with many startups and entrepreneurs we have distilled a way of working that really suits creative innovation. Come to us with your idea and talk us through it. We then prepare for you the first workplan that takes the form of a 5 day sprint. At the end of the 5 days you will have something live to visit or download onto your phone; something to test and put in front of your users.
         p The first version will not be the complete expression of your idea, it will be the Minimal Viable Product (MVP) that then becomes the kernel of the next iteration.
         p We review the previous sprint, consider the feedback from your testing, and then define the next sprint with you. This pattern we repeat until you are going live, talking at launch events and sending off press releases about your new product!
@@ -63,88 +64,4 @@ block content
         h2 Community
         p Come and meet us. We run the monthly Meteor meetup in London, the London’s Node School and Nodebots of London. These events bring together members of the extended community to gain new skills and insights, make friendships and share our passion for code.
 
-block scripts
-  script.
-    (function photoGrid () {
-      var gridEl = document.getElementById('photo-grid')
-      var w = gridEl.clientWidth
-      var cols = Math.floor((w / 160) + 1)
-      
-      var logos = [
-        { title: 'KitMapper', href: 'https://kitmapper.com', bg:'https://pbs.twimg.com/profile_images/640891936681934848/Ak23y-Og.png' },
-        { title: 'Meteor London', href: 'http://www.meetup.com/Meteor-London/', bg:'/img/logo-meteor-partner.png' },
-        { title: 'NodeBots', href: 'http://www.meetup.com/NodeBots-of-London/', bg:'https://raw.githubusercontent.com/voodootikigod/logo.js/master/nodebots/nodebots.png' }
-        //- { title: 'School Of Wok', href: 'https://schoolofwok.co.uk/', bg:'https://bo.schoolofwok.co.uk/favicon-152.png' },
-      ]
-      
-      var ids = ['9GafGxpxhF', '8sekCUJxkG', '0KWJKlJxoE','0KfUMUpxhT', '0iAvPRJxhR', '1l6mRhpxsP', '2ZI73cpxqx', '2ZIvL-pxqg', '3CJTePJxm9', '3CuZffpxo0', '3U_ICDJxlp', '43k4UIpxij', '4e-okqJxsb', '4td7hupxsi', '5ULthMJxm0', '5hiNCCpxu0', '6UdNeXpxhL', '6rupsMpxsC', '7vnOATpxrY', '836BkopxuN', '8quYYcJxp0',  'XeoqKSpxoz', 'Yiauo3Jxl-', 'ayzF_8JxkM', 'b6JVFCpxp5', 'b6jTYBJxtE', 'b6kI7spxuV', 'bFRB9kpxu9', 'b_MXPopxnY', 'bba989Jxu_', 'btKJaIJxqJ', 'bzE6ngJxhi', 'bzE87Bpxhm', 'cKRTtVJxgG', 'cKRxh_pxg7', 'cQ8RV5Jxqg', 'cRG6NQJxiy', 'cRGjcSpxic', 'cRGnI7pxid', 'cRHdCGpxjd', 'cRLy0LJxm4', 'cSYn-zpxiS', 'cZPB3opxhW', 'cgqknlJxkr', 'cjmtJwJxk-', 'dzIgKVJxtL', 'e0dWD-Jxpc', 'e9-puupxrm', 'eSHSrepxvJ', 'eVmjnPJxuX', 'eZychZpxlD', 'eaDcouJxot', 'ezbgAQpxmb', 'f7-BX6Jxs6', 'f765pdpxmg', 'f8ARSmJxg0', 'fA2Pe1JxuG', 'fAkkUSJxkd', 'fDGaqoJxgl', 'fK4rZrJxlB', 'fK4zNSpxlI', 'fM4VdSpxg0', 'fM4fjuJxg9', 'fM_2BDJxmg', 'fM_nZoJxmP', 'fM_tkhJxmW', 'fNWKkgJxto', 'fNoeWxpxk9', 'ffak-SJxvH', 'gQqyiVpxl_', 'gbMaZvJxh8', 'ggGtNPJxln', 'ggGxYMpxlu', 'ggHGs_pxmh', 'h6E495pxr0', 'hCtZpxgH', 'ibuHZypxm_', 'icFaHyJxrS', 'iwGfCppxnH', 'j4OiffJxtG', 'jWfsbSpxh8', 'jWti-BJxkv', 'k7oy3cpxlc', 'k9P-lupxm2', 'k9cdiKJxhv', 'kFn0OaJxrl', 'kFtjUlpxjs', 'mnw487pxui', 'nP8hoCpxkc', 'nQbKlPJxsx', 'nQddWrJxhA', 'nQfktQJxkS', 'nQfxb2pxkm', 'nQglWvpxmI', 'nf4JJKpxo-', 'nftwPopxrS', 'ngFJG1pxu6', 'ngWuGYpxpa', 'nko-W1pxtL', 'nsw7Wipxpp', 'oDP2Yvpxi2', 'oEEdyspxuu', 'oqrRNXJxnt', 'p-AMfPpxtD', 'pEqvlKJxpo', 'pJ7JmHJxi0', 'pJ89jrpxni', 'pRG0qgJxvS', 'pRUGFNJxsB', 'pXBuvjpxpk', 'prDpAHJxo7', 'prEA_xJxpi', 'ps7mwYJxv5', 'ps9_Slpxh6', 'pv1s1mJxql', 'pwAw7Spxpq', 'pwCxJ7pxs2', 'pwHi9xJxkd', 'pwHjKeJxke', 'py17f7Jxiy', 'pyn99aJxoU', 'pyyGJmJxrf', 'pyzcgnJxuJ', 'pzZQToJxsM', 'qKtR9wJxuG', 'qmNl4ZJxgE', 'qoZ5dmJxo2', 'qorKosJxtp', 'r-K-ZhpxkN', 'r7Xgsbpxhn', 'rEZejspxrX', 'rsQaISpxtY', 's2n6LUJxjM', 'sCnEenJxrG', 'sCup3CJxmY', 'sFU4OHJxq9', 'sNV9EfJxqU', 'smeM62pxp3', 'tD1Jx4pxo8', 'tVXIm8JxiV', 'tiC60lJxv3', 'txQ1I8pxuK', 'u8IIqXpxlr', 'uAkKsIJxiW', 'uay8P_Jxk0', 'udLlUwJxnH', 'um9XFfJxgn', 'v3_v02pxkd', 'v4AOplpxpL', 'vD5530pxi-', 'vO-Kq8JxiV', 'vO9hvHpxuH', 'vauuDVJxgs', 'vyjNkBpxpr', 'vyneyApxpq', 'w1xoeKJxiS', 'wBWURGpxkK', 'wBWkmNJxlF', 'wRBKoxpxu2', 'wjugoIpxkw', 'wwlldnJxuO', 'xb6V3tpxtd', 'xbcbVgJxjD', 'xq8znzpxjD', 'xrh67Tpxii', 'xrhqM2Jxh8', 'zH4jATJxvu', 'zHrkOzpxqX', 'zHtpYLJxtM', 'zHucg8pxuc', 'zHvhObJxv5' ]
-        .map((id) => {
-          return { bg:`/img/tableflip-photos/${id}.l.jpg` }
-        }) 
-      //- .map((id) => `http://instagram.com/p/${id}/media/?size=m`)
-      
-      var data = shuffle(ids)
-      data[0] = logos[0]
-      data[2] = logos[1]
-      data[4] = logos[2]
-      var cells = data
-        .map((obj) => {
-          console.log(obj)
-          var el = document.createElement('a')
-          el.style.backgroundImage = `url(${obj.bg})`
-          el.className = 'cell'
-          el.style.width = (100 / cols) + '%'
-          if (obj.href) el.href = obj.href
-          if (obj.title) el.title = obj.title
-          return el
-        })
-        
-      cells.forEach(el => gridEl.appendChild(el))
-      var i = 0
-      var id = setInterval(function(){
-        cells[i++].className = 'cell yep'
-        if (i >= cells.length -1) {
-          window.clearInterval(id)
-        }
-      }, 800)
-      
-      function shuffle(array) {
-        var counter = array.length
-        // While there are elements in the array
-        while (counter > 0) {
-            // Pick a random index
-            var index = Math.floor(Math.random() * counter)
-            // Decrease counter by 1
-            counter--
-            // And swap the last element with it
-            var temp = array[counter]
-            array[counter] = array[index]
-            array[index] = temp
-        }
-        return array
-      }
-    })()
     
-    ;(function () {
-      var html = document.getElementsByTagName('html')[0]
-      var scrolled = false
-      setTimeout(function () { window.onscroll() })
-      function addClass (el, className) {
-        el.className = el.className.split(' ').concat(className).join(' ')
-      }
-      function removeClass (el, className) {
-        var classes = el.className.split(' ')
-        el.className = classes.filter(function (c) {
-          return c != className
-        }).join(' ')
-      }
-      window.onscroll = function () {
-        if (window.scrollY > 0 && !scrolled) {
-          addClass(html, 'scrolled')
-          scrolled = true
-        } else if (window.scrollY <= 0 && scrolled) {
-          removeClass(html, 'scrolled')
-          scrolled = false
-        }
-      }
-    })()

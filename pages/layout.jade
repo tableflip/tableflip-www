@@ -1,10 +1,13 @@
+include ./icon
+
 doctype html
 html(lang='en')
   head
     meta(charset='utf-8')
-    title TABLEFLIP - we build websites, apps, robots and community
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    link(rel='stylesheet', href='main.css')
+    title=content.pageTitle 
+    meta(name='description', content=facts.description) 
+    link(rel='stylesheet', href=meta.relativePathToRoot + '/bundle.css')
     script.
       (function(w,i,z,a,r,d,y){w['GoogleAnalyticsObject']=r;w[r]=w[r]||function(){
       (w[r].q=w[r].q||[]).push(arguments)},w[r].l=1*new Date();d=i.createElement(z),
@@ -16,29 +19,23 @@ html(lang='en')
     header
       #logo
         a(href='/', title='(╯°□°）╯︵ ┻━┻')
-          img(src='img/tableflip.min.svg')
+          img(src=meta.relativePathToRoot + '/img/tableflip.min.svg')
       nav
         ul
           li
-            a(href='#about', title='About')
-              img(src='img/icon-info.svg')
-              span About
-          li
-            a(href='#portfolio', title='Portfolio')
-              img(src='img/icon-briefcase.svg')
-              span Portfolio
-          li
             a(href='http://blog.tableflip.io/', title='Blog')
-              img(src='img/icon-blog.svg')
+              +icon('blog')
               span Blog
           li
             a(href='#contact', title='Contact')
-              img(src='img/icon-phone.svg')
+              +icon('phone')
               span Contact
       
     block content
     
     footer &copy; 2016 TABLEFLIP Ltd. • All rights reserved.
-    
+    include ./bundle.svg
     link(href='https://fonts.googleapis.com/css?family=Biryani:700', rel='stylesheet')
+    script(src=meta.relativePathToRoot + '/bundle.js')
     block scripts
+    

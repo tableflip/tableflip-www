@@ -18,8 +18,8 @@ block content
     h1 TABLEFLIP
   main
     a(name='about')
-    section.container
-      p.lead 
+    section.max-width-3.mx-auto.p1
+      p.lead
         span.block A web-developer co-op.
         span.block Experts in Node.js &amp; Meteor
         span.block.fade-1 Based in London.
@@ -33,8 +33,9 @@ block content
         p Whether you need a startup dev team, or a simple website, we make it happen.
         p Our way of breaking it down into iterative steps makes the process of creating your product easy to comprehend and control.
       
-      hr.fade
-    .max-width-4.mx-auto
+    hr.hr-table.my3
+      
+    .max-width-4.mx-auto.p1
       article
         h1 TABLEFLIP Start
           sup Up!
@@ -47,13 +48,13 @@ block content
             p Based on your feedback, we then work together to define the most important thing for the next workplan. 
               strong Plan. Build. Review.
               |  By repeating this simple pattern we can take you from idea to new business in a matter of weeks.
-            p
+            p.py2
               a.btn.btn-primary(href="./startup") Get started
           .sm-col.sm-col-4.px2
             img.fit.rounded(src='./img/photos/8sekCUJxkG.l.jpg')
         
-      .clearfix.py4.mxn3
-        .sm-col.sm-col-6.px3
+      .clearfix.mxn3.mt3
+        .sm-col.sm-col-6.p3
           article
             h1 Better Websites
             p 
@@ -66,36 +67,37 @@ block content
             
             form
               label.label Your email address
-              input.input(required)
+              input.input.border-box(type="email", required)
               label.label Any info
-              input.input
+              input.input.border-box(type="text")
               button.btn.btn-primary Send
 
-        .sm-col.sm-col-6.px3
+        .sm-col.sm-col-6.p3
           article
             h1 Consult TABLEFLIP
             p
               i We're outragously good.
-            p You might need some advice or want some work on your existing product, we can help with that too. Talk to us in confidence about your needs. we'll agree a workplan and charge per day.
+            p You might need some advice or want some work on your existing product, we can help with that too. 
             p 
               a(href="https://nodejs.org", title="JavaScript and Node.js").pr3
-                img.rounded(src="./img/logos/node-js.svg" style="height:100px;")
+                img.rounded(src="./img/logos/node-js.svg" style="height:90px;")
               a(href="https://www.meteor.com/", title="Meteor for full stack apps").pr1
-                img.rounded(src="./img/logos/meteor-partner.png" style="height:100px;")
+                img.rounded(src="./img/logos/meteor-partner.png" style="height:90px;")
               a(href="https://www.mongodb.org/", title="MongoDB for much data")
-                img.rounded(src="./img/logos/mongo.png" style="height:100px;")
+                img.rounded(src="./img/logos/mongo.png" style="height:90px;")
 
             P We are principally a JavaScript shop. We use Node.js as our runtime of choice, and are a an offcial Meteor partner.
             
-            p We've helped diagnose performance issues, built custom apis and finely tailored user interfaces, rejuvenated legacy systems and automated multi-server infrastructures for <a href="http://www.apple.com/uk/business">giant</a> <a href="http://web.polestarglobal.com/">megacorps</a>, <a href="https://schoolofwok.co.uk/">shops</a>, and <a href="https://kitmapper.com">startups</a> alike.
+            p We've diagnosed performance issues, built custom apis and finely tailored user interfaces, rejuvenated legacy systems and automated multi-server infrastructures for <a href="http://www.apple.com/uk/business">giant</a> <a href="http://web.polestarglobal.com/">megacorps</a>, <a href="https://schoolofwok.co.uk/">shops</a>, and <a href="https://kitmapper.com">startups</a> alike. Talk to us in confidence about your needs. we'll agree a workplan and charge per day.
+      
+      hr.hr-table.my3
         
-      article
-        h1 Community
+      article.max-width-4.mx-auto.pt4.pb1
         .clearfix.mxn2
           .sm-col.sm-col-4.px2
-            img.fit.rounded(src='./img/photos/9GafGxpxhF.l.jpg')
+            img.fit.rounded(src='./img/photos/9GafGxpxhF.l.jpg').pb2
           .sm-col.sm-col-8.px2
-        
+            h1 Community
             p Come and meet us. We run the monthly 
               a(href="http://meetup.com/Meteor-London") Meteor meetup 
               | in London, as well as 
@@ -104,15 +106,17 @@ block content
               a(href="http://www.meetup.com/NodeBots-of-London/") Nodebots of London. 
             p These events bring together members of the extended community to gain new skills and insights, make friends and share our passion for code.
             p 
-              a(href="http://www.meetup.com/NodeBots-of-London/").pr2
-                img.rounded(src="./img/logos/nodebots.png" style="width:100px")
-              a(href="http://www.meetup.com/Meteor-London/").pr2
-                img.rounded(src="./img/logos/meteor-dark.png" style="width:100px")
-              a(href="http://nodeschool.io/london")
-                img.rounded(src="./img/logos/nodeschool.png" style="width:100px")
+              a(href="http://www.meetup.com/NodeBots-of-London/" title="NodeBots of London").pr2
+                img.rounded.sticker(src="./img/logos/nodebots.png")
+              a(href="http://www.meetup.com/Meteor-London/" title="Meteor London").pr2
+                img.rounded.sticker(src="./img/logos/meteor-dark.png")
+              a(href="http://nodeschool.io/london" title="NodeSchool London").pr2
+                img.rounded.sticker(src="./img/logos/nodeschool.png")
+              a(href="http://greatbritishnodeconf.co.uk/" title="Great British Node Conf 2014")
+                img.rounded.sticker(src="./img/logos/gbnc.png")
       
       a(name='contact')
-      article.pt4.text-center
+      article.pb3.pt4.text-center
         h1 Contact
         ul.list-reset
           li.inline-block.pr2
@@ -131,19 +135,15 @@ block content
             a(href='https://twitter.com/bmordan', title='Bernard "biscuits" Mordan')
               img(src='https://avatars3.githubusercontent.com/u/4499581?v=3&amp;s=80', width='80').circle
         p
-          strong Do get in touch.
-          br 
+          strong Get in touch. 
           | Send an email to 
           a(href='mailto:hello@tableflip.io') hello@tableflip.io 
           | and we'll get back as soon as we can. 
-          br
-          | It'll probably be Bernard, he's lovely.
-        p
+        p.pt3
           a.btn.btn-primary(href='mailto:hello@tableflip.io') → Email us
       
-      a(name='address')
-      #sec-address.section
-        .container.vcard
+        a(name='address')
+        .pt3.vcard
           p.adr
             strong Address: 
             span.street-address Unit 1a, 1 East Dulwich Road
@@ -151,6 +151,5 @@ block content
             span.locality London
             | , 
             span.postal-code SE22 9BA
-        iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2485.7772475944635!2d-0.06762329999995409!3d51.46224610000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487603bcd574cb6b%3A0x7ff8ee0aab796340!2s1a%2C+1+E+Dulwich+Rd%2C+London+SE15!5e0!3m2!1sen!2suk!4v1415827434779', frameborder='0', style='border:0; height:400px;')
-          p
-            a.btn(href='https://www.google.co.uk/maps/place/1+E+Dulwich+Rd,+London+SE15/@51.4622542,-0.0675658,17z/data=!4m7!1m4!3m3!1s0x487603bcd574cb6b:0x275451ab9158a674!2s1+E+Dulwich+Rd,+London+SE15!3b1!3m1!1s0x487603bcd574cb6b:0x275451ab9158a674', target='_blank') → View on Google Maps
+            
+        iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2485.7772475944635!2d-0.06762329999995409!3d51.46224610000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487603bcd574cb6b%3A0x7ff8ee0aab796340!2s1a%2C+1+E+Dulwich+Rd%2C+London+SE15!5e0!3m2!1sen!2suk!4v1415827434779', frameborder='0', style='border:0; height:400px; width:100%')

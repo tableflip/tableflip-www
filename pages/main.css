@@ -1,4 +1,17 @@
 @import "normalize.css";
+@import 'basscss-type-scale';
+@import 'basscss-typography';
+@import 'basscss-layout';
+@import 'basscss-align';
+@import 'basscss-margin';
+@import 'basscss-padding';
+@import 'basscss-grid';
+@import 'basscss-flexbox';
+@import 'basscss-position';
+@import 'basscss-border';
+@import 'basscss-hide';
+@import 'basscss-forms';
+
 @import "./home/home.css";
 
 :root {
@@ -57,7 +70,7 @@ blockquote p {
   letter-spacing:1px;
   color:black;
 }
-a.btn {
+.btn {
   display: inline-block;
   font-size: 24px;
   text-decoration: none;
@@ -71,10 +84,10 @@ a.btn {
   cursor: pointer;
   transition: box-shadow 0.25s linear;
 }
-a.btn:hover {
+.btn:hover {
   box-shadow: 0 0 5px #DB4334;
 }
-a.btn:active {
+.btn:active {
   box-shadow: 0 0 4px #444 inset;
   border: 0;
   padding: 3px 15px 8px;
@@ -114,18 +127,22 @@ nav ul {
 nav li {
   display: inline;
 }
-nav li:nth-child(3), nav li:nth-child(4) {
+nav li:nth-child(2) {
   float: right;
 }
 nav a {
+  color:white;
   text-decoration: none;
   transition: all 0.25s ease-out;
-  padding: 10px;
+  padding: 20px;
 }
-nav a * {
-  vertical-align: middle;
+nav a .svg-icon {
+  vertical-align: -5px;
 }
 nav a:hover {
+  color:white;
+  box-shadow: inset 0px -4px 0px 0px white;
+  background: rgba(0,0,0,0.02);
 }
 nav a span {
   position: fixed;
@@ -142,7 +159,7 @@ nav a img {
     float: none;
   }
   nav a {
-    padding: 15px;
+    padding: 20px;
   }
   nav a span {
     position: relative;
@@ -205,4 +222,19 @@ body > svg {
 .svg-icon svg {
   width: 100%;
   height: 100%;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+hr {
+  border: 0;
+  margin: 4em auto;
+  max-width: 100%;
+  background-position: 50%;
+  box-sizing: border-box;
+}
+
+.input {
+  height: 32px;
+  height: 2rem;
 }

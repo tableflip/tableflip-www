@@ -7,16 +7,6 @@
 .scrolled .fade-2 {
   opacity:1;
 }
-.aspect-3-1 {
-  position:relative;
-}
-.aspect-3-1:before {
-  display:block;
-  content:"";
-  width:100%;
-  padding-top:29%;
-}
-
 #hero {
   position:relative;
 }
@@ -291,18 +281,5 @@
   #piece-sow {
     background-image: url(img/bg-piece-sow.jpg);
   }
-}
-
-#mugshots {
-  list-style-type: none;
-  padding: 0;
-}
-#mugshots li {
-  display: inline-block;
-  margin: 0 15px;
-}
-#mugshots img {
-  display: inline-block;
-  border-radius: 50%;
 }
 

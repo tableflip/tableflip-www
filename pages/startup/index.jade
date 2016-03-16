@@ -1,0 +1,37 @@
+extends ../layout.jade
+
+block content
+  main.max-width-3.mx-auto.p1.pt3.mt4
+    h1 TABLEFLIP Start
+      sup Up!
+
+    form.border.p3.mb3.rounded(style="background:whitesmoke")
+      p Tell us about your project. We'll get back to you asap.
+      hr.hr-table
+      label.label Your name
+      input.input.border-box(type="text", required)
+      label.label Email address
+      input.input.border-box(type="email", required)
+      label.label Project name
+      input.input.border-box(type="text" value="TBD")
+      label.label Project dev budget
+      select.select.border-box
+        option Not fixed yet
+        option £5,000 to £10,000
+        option £10,000 to £49,999
+        option £50,000 to £99,999
+        option £100,000+
+      label.label Do you have design wireframes or mockups?
+      select.select.border-box
+        option Not yet
+        option Yes
+      label.label Will it be open source?
+      select.select.border-box
+        option What's that?
+        option As much as possible
+        option No thanks
+      label.label What is projects main aim?
+      textarea.textarea(rows='4', placeholder="We'd like to...")
+      button.btn.mt2 Send
+      
+      hr.hr-table

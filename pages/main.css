@@ -6,7 +6,6 @@
 @import 'basscss-margin';
 @import 'basscss-padding';
 @import 'basscss-grid';
-@import 'basscss-flexbox';
 @import 'basscss-position';
 @import 'basscss-border';
 @import 'basscss-hide';
@@ -70,7 +69,7 @@ blockquote p {
   letter-spacing:1px;
   color:black;
 }
-.btn {
+.btn, .btn:visited {
   display: inline-block;
   font-size: 24px;
   letter-spacing:1px;

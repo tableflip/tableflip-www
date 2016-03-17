@@ -40,7 +40,7 @@ block content
       article
         h1 TABLEFLIP Start
           sup Up!
-        p 
+        p
           i We&apos;re your 
             span.nowrap technical co-founder.
         .clearfix.mxn2
@@ -49,47 +49,46 @@ block content
             p Based on your feedback, we then work together to define the most important thing for the next workplan. 
               strong Plan. Build. Review.
               |  By repeating this simple pattern we can take you from idea to new business in a matter of weeks.
-            p.py2
-              a.btn.btn-primary(href="./startup") Get started
+            //- p.py2
+            //-   a.btn.btn-primary(href="./startup") Get started
           .sm-col.sm-col-4.px2
             img.fit.rounded(src='./img/photos/8sekCUJxkG.l.jpg')
         
       .clearfix.mxn3.mt3
         .sm-col.sm-col-6.p3
           article
-            h1 Better Websites
-            p 
-              i No more templates.
-            p Need a website for your project, cause or business, that loads quickly and works on a mobile just as well as a laptop?  
-              a(href='#contact')
-                strong Get in touch.
-            p We build reponsive, single page sites for <strong>£899</strong> ex. vat. Hosting is free for the first month, then £5 per month after that. 
-            p You get visitor stats, contact form notifications, and the power to edit your site content direct from an app on your phone.
-            
-            form
-              label.label Your email address
-              input.input.border-box(type="email", required)
-              label.label Any info
-              input.input.border-box(type="text")
-              button.btn.btn-primary Send
-
-        .sm-col.sm-col-6.p3
-          article
             h1 Consult TABLEFLIP
-            p
-              i We're outragously good.
+            i We're outragously good.
             p You might need some advice or want some work on your existing product, we can help with that too. 
             p 
               a(href="https://nodejs.org", title="JavaScript and Node.js").pr3
-                img.rounded(src="./img/logos/node-js.svg" style="height:90px;")
+                img.rounded.sticker(src="./img/logos/node-js.svg")
               a(href="https://www.meteor.com/", title="Meteor for full stack apps").pr1
-                img.rounded(src="./img/logos/meteor-partner.png" style="height:90px;")
-              a(href="https://www.mongodb.org/", title="MongoDB for much data")
-                img.rounded(src="./img/logos/mongo.png" style="height:90px;")
-
+                img.rounded.sticker(src="./img/logos/meteor-partner.png")
+              a(href="https://www.mongodb.org/", title="MongoDB for much data").pr1
+                img.rounded.sticker(src="./img/logos/mongo.png")
+              a(href="https://www.ansible.com/", title="Ansible for infrastructure automation")
+                img.rounded.sticker(src="./img/logos/ansible.png" )
+                
             P We are principally a JavaScript shop. We use Node.js as our runtime of choice, and are a an offcial Meteor partner.
-            
-            p We've diagnosed performance issues, built custom apis and finely tailored user interfaces, rejuvenated legacy systems and automated multi-server infrastructures for <a href="http://www.apple.com/uk/business">giant</a> <a href="http://web.polestarglobal.com/">megacorps</a>, <a href="https://schoolofwok.co.uk/">shops</a>, and <a href="https://kitmapper.com">startups</a> alike. Talk to us in confidence about your needs. we'll agree a workplan and charge per day.
+            p We've diagnosed performance issues, built custom apis and finely tailored user interfaces, rejuvenated legacy systems and automated multi-server infrastructures for <a href="http://www.apple.com/uk/business">giant</a> <a href="http://web.polestarglobal.com/">megacorps</a>, <a href="https://schoolofwok.co.uk/">shops</a>, and <a href="https://kitmapper.com">startups</a> alike. 
+            p Talk to us in confidence about your needs. we'll agree a workplan and charge per day.
+
+        .sm-col.sm-col-6.p3
+          article
+            h1 Better Websites
+            i No more templates.
+            p Need a website for your project, cause or business, that loads quickly and works on a mobile just as well as a laptop?  
+              strong Get in touch.
+            p We build reponsive, single page sites for <strong>£899</strong> ex. vat. Hosting is free for the first month, then £5 per month after that. 
+            p You get visitor stats, contact form notifications, and the power to edit your site content direct from an app on your phone.
+            p Send us an email to <strong>hello@tableflip.io</strong> to get started.
+            //- form(action="post")
+            //-   label.label Your email address
+            //-   input.input.border-box(type="email", required)
+            //-   label.label Any info
+            //-   input.input.border-box(type="text")
+            //-   button.btn.btn-primary Send
       
       hr.hr-table.my3
         
@@ -138,7 +137,7 @@ block content
         p
           strong Get in touch. 
           | Send an email to 
-          a(href='mailto:hello@tableflip.io') hello@tableflip.io 
+          strong hello@tableflip.io 
           | and we'll get back as soon as we can. 
         p.pt3
           a.btn.btn-primary(href='mailto:hello@tableflip.io') → Email us

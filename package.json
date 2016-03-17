@@ -51,7 +51,6 @@
   },
   "devDependencies": {
     "browser-sync": "^2.11.1",
-    "find": "^0.2.4",
     "watchify": "^3.7.0"
   }
 }

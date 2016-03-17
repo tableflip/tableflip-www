@@ -1,0 +1,45 @@
+extends ../layout.jade
+
+block content
+  main.max-width-3.mx-auto.p1.pt3.mt4
+    h1 TABLEFLIP Start
+      sup Up!
+
+    form.border.p3.mb3.rounded(method="post", action="http://post.tableflip.io:1337" style="background:#F3F3F3")
+      p Tell us about your project. We'll get back to you asap.
+      hr.hr-table
+      
+      label.label(for="name") Your name
+      input.input.border-box(id="name" name="name" type="text", required, autofocus)
+      
+      label.label(for="email") Email address
+      input.input.border-box(id="email" name="email" type="email", required)
+      
+      label.label(for="project-name") Project name
+      input.input.border-box(id="project-name" name="project-name" type="text" value="TBD")
+      
+      label.label(for="budget") Project dev budget
+      select.select.border-box(id="budget" name="budget")
+        option Not fixed yet
+        option £5,000 to £10,000
+        option £10,000 to £49,999
+        option £50,000 to £99,999
+        option £100,000+
+      
+      label.label(for="designs") Do you have design wireframes or mockups?
+      select.select.border-box(id="designs" name="designs")
+        option Not yet
+        option Yes
+      
+      label.label(for="open-source") Will it be open source?
+      select.select.border-box(id="open-source" name="open-source")
+        option What's that?
+        option As much as possible
+        option No thanks
+      
+      label.label(for="aim") What is project's main aim?
+      textarea.textarea(id="aim" name="aim" rows='4', placeholder="We'd like to...").border-box
+      
+      button.btn.mt2(type="submit") Send
+      
+      hr.hr-table

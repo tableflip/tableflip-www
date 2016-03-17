@@ -4,17 +4,23 @@
   "description": "tableflip-www",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cd dist && instant",
-    "html": "jade src/index.jade --out dist",
-    "css": "postcss --use autoprefixer src/main.css -d dist",
-    "copy": "rsync --delete -a src/favicon.ico src/font src/img dist",
-    "build": "npm-run-all --parallel copy html css",
+    "test": "say sorry && exit 1",
+    "start": "npm-run-all build watch",
+    "postinstall": "npm run build",
+    "clean": "rm -rf ./dist",
+    "build": "npm-run-all build:svg --parallel build:static build:css build:js build:html",
+    "build:static": "rsync -a public/ dist/",
+    "build:svg": "svgshelf 'svg/*.svg' pages/bundle.svg",
+    "build:css": "postcss --use postcss-import --use postcss-cssnext pages/main.css -o dist/bundle.css",
+    "build:js": "browserify pages/main.js -o dist/bundle.js",
+    "build:html": "node build/jade",
     "watch": "npm-run-all --parallel watch:*",
-    "watch:html": "nodemon -w src -e jade,md -x npm run html",
-    "watch:css": "nodemon -w src -e css -x npm run css",
-    "watch:copy": "nodemon -w src/favicon.ico -w src/img -w src/font -e '*' -x npm run copy",
-    "postinstall": "npm run build"
+    "watch:serve": "browser-sync start --files 'dist/*' --server dist",
+    "watch:static": "nodemon -w public -e '*' -x npm run build:static",
+    "watch:css": "nodemon -w pages -e css -x npm run build:css",
+    "watch:js": "watchify pages/main.js -o dist/bundle.js",
+    "watch:svg": "nodemon -w svg -e svg -x npm run build:svg",
+    "watch:html": "nodemon -w pages -e jade,md -x npm run build:html"
   },
   "repository": {
     "type": "git",
@@ -27,11 +33,22 @@
   },
   "homepage": "https://github.com/tableflip/tableflip-www#readme",
   "dependencies": {
-    "autoprefixer": "^6.0.2",
-    "instant-server": "^1.3.0",
+    "basscss": "^8.0.1",
+    "basscss-forms": "^1.0.0",
+    "browserify": "^13.0.0",
     "jade": "^1.11.0",
     "jstransformer-remarkable": "^1.1.1",
+    "lodash": "^4.6.1",
+    "normalize.css": "^3.0.3",
     "npm-run-all": "^1.2.11",
-    "postcss-cli": "^2.1.0"
+    "postcss-cli": "^2.5.1",
+    "postcss-cssnext": "^2.4.0",
+    "postcss-import": "^8.0.2",
+    "svgshelf": "^1.0.3"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "find": "^0.2.4",
+    "watchify": "^3.7.0"
   }
 }

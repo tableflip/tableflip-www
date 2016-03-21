@@ -25,7 +25,7 @@ block content
         span.block.fade-1 Based in London
         span.block.fade-2 Born in 
           span.monospace
-            small (╯°□°）╯︵   
+            small (╯°□°）╯︵ 
             | outrage
           
       h2 We build for the web.
@@ -52,8 +52,8 @@ block content
             p Based on your feedback, we then work together to define the most important thing for the next workplan. 
               strong Plan. Build. Review.
               |  By repeating this simple pattern we can take you from idea to new business in a matter of weeks.
-            //- p.py2
-            //-   a.btn.btn-primary(href="./startup") Get started
+            p.py2
+              a.btn.btn-primary(href="./startup") Get started
           .sm-col.sm-col-4.px2
             img.fit.rounded(src='./img/photos/8sekCUJxkG.l.jpg')
         
@@ -85,13 +85,13 @@ block content
               strong Get in touch.
             p We build responsive, single page sites for <strong>£899</strong> ex. vat. Hosting is free for the first month, then £5 per month after that. 
             p You get visitor stats, contact form notifications, and the power to edit your site content direct from an app on your phone.
-            p Send us an email to <strong>hello@tableflip.io</strong> to get started.
-            //- form(action="post")
-            //-   label.label Your email address
-            //-   input.input.border-box(type="email", required)
-            //-   label.label Any info
-            //-   input.input.border-box(type="text")
-            //-   button.btn.btn-primary Send
+            //- p Send us an email to <strong>hello@tableflip.io</strong> to get started.
+            form(method="post", action="http://post.tableflip.io:1337")
+              label.label(for="email") Your email address
+              input.input.border-box(id="email", name="email", type="email", required)
+              label.label(for="info") Any info
+              textarea.textarea.border-box(id="info", name="info", rows="3")
+              button.btn.btn-primary Send
       
       hr.hr-table.my3
         

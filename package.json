@@ -54,6 +54,7 @@
     "mkdirp": "^0.5.1",
     "normalize.css": "^3.0.3",
     "npm-run-all": "^1.2.11",
+    "page": "^1.7.1",
     "postcss-cli": "^2.5.1",
     "postcss-cssnext": "^2.4.0",
     "postcss-import": "^8.0.2",

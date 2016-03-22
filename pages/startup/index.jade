@@ -5,7 +5,7 @@ block content
     h1 TABLEFLIP Start
       sup Up!
 
-    form.border.p3.mb3.rounded(method="post", action="http://post.tableflip.io:1337" style="background:#F3F3F3")
+    form.border.p3.mb3.rounded(method="post", action="http://post.tableflip.io:1337/email/tableflip/startup" style="background:#F3F3F3")
       p Tell us about your project. We'll get back to you asap.
       hr.hr-table
       
@@ -39,7 +39,9 @@ block content
         option What's that?
         option As much as possible
         option No thanks
-      
+
+      input(type='hidden' name='subject' value='NEW StartUP!')
+
       button.btn.mt2(type="submit") Send
       
       hr.hr-table

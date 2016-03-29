@@ -144,3 +144,7 @@
   width: 100%;
   height: 200px;
 }
+#sent-message {
+  color: #E74C3C;
+  transition: color 3s;
+}

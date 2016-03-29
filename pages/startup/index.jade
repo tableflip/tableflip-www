@@ -5,7 +5,7 @@ block content
     h1 TABLEFLIP Start
       sup Up!
 
-    form.border.p3.mb3.rounded(method="post", action="http://post.tableflip.io:1337" style="background:#F3F3F3")
+    form#startup-form.border.p3.mb3.rounded(method="post" action="https://post.tableflip.io/tableflip.io" style="background:#F3F3F3")
       p Tell us about your project. We'll get back to you asap.
       hr.hr-table
       
@@ -16,7 +16,10 @@ block content
       input.input.border-box(id="email" name="email" type="email", required)
       
       label.label(for="project-name") Project name
-      input.input.border-box(id="project-name" name="project-name" type="text" value="TBD")
+      input.input.border-box(id="project-name" name="project-name", type="text", required)
+      
+      label.label(for="aim") What is project's main aim?
+      textarea.textarea(id="aim" name="aim" rows='4', placeholder="We'd like to...", required).border-box
       
       label.label(for="budget") Project dev budget
       select.select.border-box(id="budget" name="budget")
@@ -36,10 +39,9 @@ block content
         option What's that?
         option As much as possible
         option No thanks
-      
-      label.label(for="aim") What is project's main aim?
-      textarea.textarea(id="aim" name="aim" rows='4', placeholder="We'd like to...").border-box
-      
+
+      input(type='hidden' name='subject' value='NEW StartUP!')
+
       button.btn.mt2(type="submit") Send
       
       hr.hr-table

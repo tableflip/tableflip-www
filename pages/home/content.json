@@ -1,3 +1,10 @@
 {
-  "pageTitle": "TABLEFLIP - we build websites, apps, robots and community"
+  "pageTitle": "TABLEFLIP - we build websites, apps, robots and community",
+  "team": [
+    { "title": "Alan \"1080\" Shaw", "link": "https://twitter.com/_alanshaw", "image":"https://en.gravatar.com/avatar/8ca838dbb449a1359b5a4eadd26abb42"},
+    { "title": "Oli \"zilla\" Evans", "link": "https://twitter.com/olizilla", "image":"https://en.gravatar.com/avatar/07b5f445334ae706381eb62aee1b8537"},
+    { "title": "(╯°□°）╯︵TABLEFLIP", "link": "https://twitter.com/_tableflip", "image":"./img/logos/tableflip.png"},
+    { "title": "Rich \"react\" Silverton", "link": "https://twitter.com/richsilvo", "image":"https://avatars0.githubusercontent.com/u/3180526?v=3&amp;s=80"},
+    { "title": "Bernard \"biscuits\" Mordan", "link": "https://twitter.com/_bmordan", "image":"https://avatars3.githubusercontent.com/u/4499581?v=3&amp;s=80"}
+  ]
 }

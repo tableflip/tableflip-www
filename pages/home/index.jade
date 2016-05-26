@@ -121,21 +121,11 @@ block content
       article.pb3.pt4.text-center
         h1 Contact
         ul.list-reset
-          li.inline-block.pr2
-            a(href='https://twitter.com/_alanshaw' title='Alan "1080" Shaw')
-              img(src='https://en.gravatar.com/avatar/8ca838dbb449a1359b5a4eadd26abb42', width='80').circle
-          li.inline-block.pr2
-            a(href='https://twitter.com/olizilla' title='Oli "zilla" Evans')
-              img(src='https://en.gravatar.com/avatar/07b5f445334ae706381eb62aee1b8537', width='80')
-          li.inline-block.pr2
-            a(href='https://twitter.com/_tableflip')
-              img(src='./img/logos/tableflip.png' width='80' title='(╯°□°）╯︵ TABLEFLIP')
-          li.inline-block.pr2
-            a(href='https://twitter.com/richsilvo' title='Rich "react" Silverton')
-              img(src='https://avatars0.githubusercontent.com/u/3180526?v=3&amp;s=80', width='80').circle
-          li.inline-block
-            a(href='https://twitter.com/_bmordan', title='Bernard "biscuits" Mordan')
-              img(src='https://avatars3.githubusercontent.com/u/4499581?v=3&amp;s=80', width='80').circle
+          each item, i in content.team
+            li.inline-block.px1
+              a(href=item.link title=item.title)
+                img.circle(src=item.image, width='80', alt=item.title)
+
         p
           strong Get in touch. 
           | Send an email to 

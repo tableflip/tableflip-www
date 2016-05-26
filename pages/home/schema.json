@@ -1,0 +1,16 @@
+{
+  "team": [{
+    "title": {
+      "type": "text",
+      "default": "tacocat"
+     },
+    "image": {
+      "type": "img",
+      "default": "https://s-media-cache-ak0.pinimg.com/236x/9a/d8/66/9ad866beb44613968f83ca3fb1647c9d.jpg"
+    },
+    "link": {
+      "type": "url",
+      "default": "http://orig11.deviantart.net/f8e8/f/2014/178/f/e/taco_cat_in_space_by_jayro_jones-d7o5mow.jpg"
+    }
+  }]
+}

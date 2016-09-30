@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+  <channel>
+    <title>TABLEFLIP</title>
+    <description>For a while now there's been a growing urge amongst the TABLEFLIP crew. A stratovolcano waiting to blurt out a fountain of opinions, observations, frustrations and wisdoms. Driven by our experiences working with many clients on varying projects and disparate code bases. From greenfield to legacy and everything in between our affliction to using the newest most shiny tech gives us a unique outlook on the state of the world of development in Node.js and JavaScript. We can no longer stem the fire hose. The TABLEFLIP podcast is here.</description>
+    <link>https://tableflip.io</link>
+    <language>en-gb</language>
+    <copyright>2016 TABLEFLIP</copyright>
+    <lastBuildDate>Fri, 30 Sep 2016 08:14:00 +0100</lastBuildDate>
+    <pubDate>Fri, 30 Sep 2016 08:14:00 +0100</pubDate>
+    <docs>https://blog.tableflip.io</docs>
+    <webMaster>hello@tableflip.io</webMaster>
+    <ttl>60</ttl>
+    <itunes:author>Alan Shaw, Oli Evans, Richard Silverton and Bernard Mordan</itunes:author>
+    <itunes:subtitle>The exciting adventures of TABLEFLIP in the world of Node.js, JavaScript, HTML and CSS</itunes:subtitle>
+    <itunes:owner>
+      <itunes:name>Alan Shaw</itunes:name>
+      <itunes:email>alan@tableflip.io</itunes:email>
+    </itunes:owner>
+    <itunes:explicit>No</itunes:explicit>
+    <itunes:image href="https://ucarecdn.com/bda55f66-5c68-411b-96f3-f0bb40309b3c/TABLEFLIP.png"/>
+    <itunes:category text="Technology">
+      <itunes:category text="Podcasting"/>
+    </itunes:category>
+    <item>
+      <title>Spacer Wars</title>
+      <link>https://blog.tableflip.io/the-tableflip-podcast/</link>
+      <guid>ae4386c3-c1cb-4907-872c-fbfa456097e5</guid>
+      <description>A short tour of keeping things apart (in HTML)</description>
+      <enclosure url="https://ucarecdn.com/ae4386c3-c1cb-4907-872c-fbfa456097e5/TABLEFLIP_podcast_003.m4a" length="6462857" type="audio/x-m4a"/>
+      <category>Podcasts</category>
+      <pubDate>Thu, 29 Sep 2016 09:15:00 +0100</pubDate>
+      <itunes:author>Oli Evans</itunes:author>
+      <itunes:explicit>No</itunes:explicit>
+      <itunes:subtitle></itunes:subtitle>
+      <itunes:duration>01:05:35</itunes:duration>
+      <itunes:keywords></itunes:keywords>
+    </item>
+  </channel>
+</rss>

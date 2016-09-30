@@ -3,7 +3,7 @@ tableflip-www
 
 The [TABLEFLIP](https://tableflip.io) website.
 
-![screenshot 2015-07-01 15 41 09](https://cloud.githubusercontent.com/assets/58871/8457160/b63c4a32-2007-11e5-804f-88a66f6984f4.png)
+![Screenshot](https://cloud.githubusercontent.com/assets/58871/15574380/e75751de-2344-11e6-978f-4c8b0b0e8095.png)
 
 ## Getting started
 

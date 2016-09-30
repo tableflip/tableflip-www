@@ -25,7 +25,7 @@ block content
         span.block.fade-1 Based in London
         span.block.fade-2 Born in 
           span.monospace
-            small (╯°□°）╯︵   
+            small (╯°□°）╯︵ 
             | outrage
           
       h2 We build for the web.
@@ -45,12 +45,15 @@ block content
             span.nowrap technical co-founder.
         .clearfix.mxn2
           .sm-col.sm-col-8.px2
-            p Having worked with many startups and entrepreneurs we have distilled a way of working that really suits creative innovation. Come to us with your idea and talk us through it. We then prepare for you the first workplan that takes the form of a 5 day sprint. At the end of the 5 days you will have something live to visit or download onto your phone; something to test and put in front of your users.
+            p Having worked with many startups and entrepreneurs we have distilled a way of working that really suits creative innovation. 
+              | Come to us with your idea and talk us through it. 
+              | We prepare a workplan that takes the form of a 5 day sprint. 
+              | At the end of the sprint you will have something live, to visit or download to your phone; something to test and put in front of your users.
             p Based on your feedback, we then work together to define the most important thing for the next workplan. 
               strong Plan. Build. Review.
               |  By repeating this simple pattern we can take you from idea to new business in a matter of weeks.
-            //- p.py2
-            //-   a.btn.btn-primary(href="./startup") Get started
+            p.py2
+              a.btn.btn-primary(href="./startup") Get started
           .sm-col.sm-col-4.px2
             img.fit.rounded(src='./img/photos/8sekCUJxkG.l.jpg')
         
@@ -58,7 +61,7 @@ block content
         .sm-col.sm-col-6.p2
           article
             h1 Consult TABLEFLIP
-            i We're outragously good.
+            i We're outrageously good.
             p You might need some advice or want some work on your existing product, we can help with that too. 
             p 
               a(href="https://nodejs.org", title="JavaScript and Node.js").pr3
@@ -80,15 +83,14 @@ block content
             i No more templates.
             p Need a website for your project, cause or business, that loads quickly and works on a mobile just as well as a laptop?  
               strong Get in touch.
-            p We build reponsive, single page sites for <strong>£899</strong> ex. vat. Hosting is free for the first month, then £5 per month after that. 
+            p We build responsive, single page sites for <strong>£899</strong> ex. vat. Hosting is free for the first month, then £5 per month after that. 
             p You get visitor stats, contact form notifications, and the power to edit your site content direct from an app on your phone.
-            p Send us an email to <strong>hello@tableflip.io</strong> to get started.
-            //- form(action="post")
-            //-   label.label Your email address
-            //-   input.input.border-box(type="email", required)
-            //-   label.label Any info
-            //-   input.input.border-box(type="text")
-            //-   button.btn.btn-primary Send
+            form#enquiry-form(method="post" action="https://post.tableflip.io/tableflip.io")
+              label.label(for="email") Your email address
+              input.input.border-box(id="email", name="email", type="email", required)
+              label.label(for="info") Any info
+              textarea.textarea.border-box(id="info", name="info", rows="3", required)
+              button.btn.btn-primary Send
       
       hr.hr-table.my3
         
@@ -119,21 +121,11 @@ block content
       article.pb3.pt4.text-center
         h1 Contact
         ul.list-reset
-          li.inline-block.pr2
-            a(href='https://twitter.com/_alanshaw' title='Alan "1080" Shaw')
-              img(src='https://en.gravatar.com/avatar/8ca838dbb449a1359b5a4eadd26abb42', width='80').circle
-          li.inline-block.pr2
-            a(href='https://twitter.com/olizilla' title='Oli "zilla" Evans')
-              img(src='https://en.gravatar.com/avatar/07b5f445334ae706381eb62aee1b8537', width='80')
-          li.inline-block.pr2
-            a(href='https://twitter.com/_tableflip')
-              img(src='./img/logos/tableflip.png' width='80' title='(╯°□°）╯︵ TABLEFLIP')
-          li.inline-block.pr2
-            a(href='https://twitter.com/richsilvo' title='Rich "react" Silverton')
-              img(src='https://avatars0.githubusercontent.com/u/3180526?v=3&amp;s=80', width='80').circle
-          li.inline-block
-            a(href='https://twitter.com/bmordan', title='Bernard "biscuits" Mordan')
-              img(src='https://avatars3.githubusercontent.com/u/4499581?v=3&amp;s=80', width='80').circle
+          each item, i in content.team
+            li.inline-block.px1
+              a(href=item.link title=item.title)
+                img.circle(src=item.image, width='80', alt=item.title)
+
         p
           strong Get in touch. 
           | Send an email to 

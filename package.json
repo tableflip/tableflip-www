@@ -1,6 +1,6 @@
 {
   "name": "tableflip-www",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "tableflip-www",
   "main": "index.js",
   "scripts": {

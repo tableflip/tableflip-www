@@ -36,5 +36,19 @@
       <itunes:duration>01:05:35</itunes:duration>
       <itunes:keywords>basecss,tachyons,gif,html,css</itunes:keywords>
     </item>
+    <item>
+      <title>Starting out with React Native</title>
+      <link>https://blog.tableflip.io/the-tableflip-podcast-starting-out-with-react-native/</link>
+      <guid>45a3a36e-86c2-44e6-93e0-01670b965aef</guid>
+      <description>Some of the gotchas and need-to-knows about developing mobile apps with React Native</description>
+      <enclosure url="https://ucarecdn.com/45a3a36e-86c2-44e6-93e0-01670b965aef/TABLEFLIP_podcast_001.m4a" length="17646435" type="audio/x-m4a"/>
+      <category>Podcasts</category>
+      <pubDate>Thu, 18 Oct 2016 09:15:00 +0100</pubDate>
+      <itunes:author>Alan Shaw</itunes:author>
+      <itunes:explicit>No</itunes:explicit>
+      <itunes:subtitle></itunes:subtitle>
+      <itunes:duration>00:35:54</itunes:duration>
+      <itunes:keywords>react,native,ios,android,codrova,nativescript</itunes:keywords>
+    </item>
   </channel>
 </rss>

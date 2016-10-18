@@ -23,20 +23,6 @@
       <itunes:category text="Podcasting"/>
     </itunes:category>
     <item>
-      <title>Spacer Wars</title>
-      <link>https://blog.tableflip.io/the-tableflip-podcast/</link>
-      <guid>4911ee95-5e90-4e42-a2d1-851700d9e109</guid>
-      <description>A short tour of keeping things apart (in HTML)</description>
-      <enclosure url="https://ucarecdn.com/4911ee95-5e90-4e42-a2d1-851700d9e109/TABLEFLIP_podcast_003.m4a" length="32216733" type="audio/x-m4a"/>
-      <category>Podcasts</category>
-      <pubDate>Thu, 29 Sep 2016 09:15:00 +0100</pubDate>
-      <itunes:author>Oli Evans</itunes:author>
-      <itunes:explicit>No</itunes:explicit>
-      <itunes:subtitle></itunes:subtitle>
-      <itunes:duration>01:05:35</itunes:duration>
-      <itunes:keywords>basecss,tachyons,gif,html,css</itunes:keywords>
-    </item>
-    <item>
       <title>Starting out with React Native</title>
       <link>https://blog.tableflip.io/the-tableflip-podcast-starting-out-with-react-native/</link>
       <guid>45a3a36e-86c2-44e6-93e0-01670b965aef</guid>
@@ -49,6 +35,20 @@
       <itunes:subtitle></itunes:subtitle>
       <itunes:duration>00:35:54</itunes:duration>
       <itunes:keywords>react,native,ios,android,codrova,nativescript</itunes:keywords>
+    </item>
+    <item>
+      <title>Spacer Wars</title>
+      <link>https://blog.tableflip.io/the-tableflip-podcast/</link>
+      <guid>4911ee95-5e90-4e42-a2d1-851700d9e109</guid>
+      <description>A short tour of keeping things apart (in HTML)</description>
+      <enclosure url="https://ucarecdn.com/4911ee95-5e90-4e42-a2d1-851700d9e109/TABLEFLIP_podcast_003.m4a" length="32216733" type="audio/x-m4a"/>
+      <category>Podcasts</category>
+      <pubDate>Thu, 29 Sep 2016 09:15:00 +0100</pubDate>
+      <itunes:author>Oli Evans</itunes:author>
+      <itunes:explicit>No</itunes:explicit>
+      <itunes:subtitle></itunes:subtitle>
+      <itunes:duration>01:05:35</itunes:duration>
+      <itunes:keywords>basecss,tachyons,gif,html,css</itunes:keywords>
     </item>
   </channel>
 </rss>

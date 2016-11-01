@@ -23,6 +23,20 @@
       <itunes:category text="Podcasting"/>
     </itunes:category>
     <item>
+      <title>Robot Laws</title>
+      <link>https://blog.tableflip.io/robot-laws/</link>
+      <guid>851f7fc9-cb62-43f9-ae49-869a69a98e8c</guid>
+      <description>The EU General Data Protection regulation and what this means for governance over the robots</description>
+      <enclosure url="https://ucarecdn.com/851f7fc9-cb62-43f9-ae49-869a69a98e8c/TABLEFLIP_podcast_002.m4a" length="8907949" type="audio/x-m4a"/>
+      <category>Podcasts</category>
+      <pubDate>Tue, 1 Nov 2016 14:52:00 +0000</pubDate>
+      <itunes:author>Bernard Mordan</itunes:author>
+      <itunes:explicit>No</itunes:explicit>
+      <itunes:subtitle></itunes:subtitle>
+      <itunes:duration>00:30:35</itunes:duration>
+      <itunes:keywords>robots,laws,AI,robocop,EU,governance</itunes:keywords>
+    </item>
+    <item>
       <title>Starting out with React Native</title>
       <link>https://blog.tableflip.io/the-tableflip-podcast-starting-out-with-react-native/</link>
       <guid>45a3a36e-86c2-44e6-93e0-01670b965aef</guid>

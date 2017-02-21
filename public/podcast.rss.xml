@@ -23,6 +23,20 @@
       <itunes:category text="Podcasting"/>
     </itunes:category>
     <item>
+      <title>The Inter Planetary File System</title>
+      <link>https://blog.tableflip.io/ipfs/</link>
+      <guid>6b0a4e81-eb9e-4316-93ac-fa845d93770a</guid>
+      <description>The Inter Planetary File System, or ifps, what is it?</description>
+      <enclosure url="https://ucarecdn.com/6b0a4e81-eb9e-4316-93ac-fa845d93770a/TABLEFLIP_podcast_005.m4a" length="36733963" type="audio/x-m4a"/>
+      <category>Podcasts</category>
+      <pubDate>Tue, 21 Feb 2017 16:25:56 +0000</pubDate>
+      <itunes:author>Oli Evans, Alan Shaw, Richard Silverton, Bernard Mordan</itunes:author>
+      <itunes:explicit>No</itunes:explicit>
+      <itunes:subtitle></itunes:subtitle>
+      <itunes:duration>01:14:41</itunes:duration>
+      <itunes:keywords>ipfs,distributed,file,system</itunes:keywords>
+    </item>
+    <item>
       <title>Apollo</title>
       <link>https://blog.tableflip.io/apollo/</link>
       <guid>255a9009-753e-4728-92f8-4ba12c364fae</guid>

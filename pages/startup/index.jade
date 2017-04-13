@@ -40,8 +40,9 @@ block content
         option As much as possible
         option No thanks
 
+      script.
+        function onSubmit (token) {document.getElementById('startup-form').submit()}
       input(type='hidden' name='subject' value='NEW StartUP!')
-
-      button.btn.mt2(type="submit") Send
+      button.btn.mt2.g-recaptcha(type="submit" data-sitekey='6Ld7yBwUAAAAAGPAgxkTaUIIVaeIP-ZztaS8hbr4' data-callback='onSubmit') Send
       
       hr.hr-table

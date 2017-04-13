@@ -64,6 +64,7 @@
   "devDependencies": {
     "browser-sync": "^2.11.1",
     "find": "^0.2.4",
+    "npm-run-all": "^1.8.0",
     "watchify": "^3.7.0"
   }
 }

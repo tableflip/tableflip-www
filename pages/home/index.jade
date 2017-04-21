@@ -90,7 +90,9 @@ block content
               input.input.border-box(id="email", name="email", type="email", required)
               label.label(for="info") Any info
               textarea.textarea.border-box(id="info", name="info", rows="3", required)
-              button.btn.btn-primary Send
+              script.
+                function onSubmit (token) {document.getElementById('enquiry-form').submit()}
+              button.btn.btn-primary.g-recaptcha(type="submit" data-sitekey='6Ld7yBwUAAAAAGPAgxkTaUIIVaeIP-ZztaS8hbr4' data-callback='onSubmit') Send
       
       hr.hr-table.my3
         

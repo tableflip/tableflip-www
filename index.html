@@ -93,7 +93,8 @@
                 <input id="email" name="email" type="email" required class="input border-box">
                 <label for="info" class="label">Any info</label>
                 <textarea id="info" name="info" rows="3" required class="textarea border-box"></textarea>
-                <button class="btn btn-primary">Send</button>
+                <script>function onSubmit (token) {document.getElementById('enquiry-form').submit()}</script>
+                <button type="submit" data-sitekey="6Ld7yBwUAAAAAGPAgxkTaUIIVaeIP-ZztaS8hbr4" data-callback="onSubmit" class="btn btn-primary g-recaptcha">Send</button>
               </form>
             </article>
           </div>

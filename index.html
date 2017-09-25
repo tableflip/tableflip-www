@@ -93,8 +93,13 @@
                 <input id="email" name="email" type="email" required class="input border-box">
                 <label for="info" class="label">Any info</label>
                 <textarea id="info" name="info" rows="3" required class="textarea border-box"></textarea>
-                <script>function onSubmit (token) {document.getElementById('enquiry-form').submit()}</script>
-                <button type="submit" data-sitekey="6Ld7yBwUAAAAAGPAgxkTaUIIVaeIP-ZztaS8hbr4" data-callback="onSubmit" class="btn btn-primary g-recaptcha">Send</button>
+                <div data-sitekey="6Lc3-DEUAAAAAOs_GCEfgjpVG3Xk1xYGgTzypCAq" data-callback="enableSubmitBtn" class="g-recaptcha inline-block"></div>
+                <script>
+                  function enableSubmitBtn () {
+                    document.getElementById('submit').disabled = false
+                  }
+                </script>
+                <button id="submit" type="submit" disabled="true" class="btn btn-primary right muted">Send</button>
               </form>
             </article>
           </div>
@@ -117,7 +122,6 @@
             <li class="inline-block px1"><a href="https://twitter.com/_alanshaw" title="Alan &quot;1080&quot; Shaw"><img src="https://en.gravatar.com/avatar/8ca838dbb449a1359b5a4eadd26abb42?s=160" width="80" alt="Alan &quot;1080&quot; Shaw" class="circle"></a></li>
             <li class="inline-block px1"><a href="https://twitter.com/olizilla" title="Oli &quot;zilla&quot; Evans"><img src="https://en.gravatar.com/avatar/07b5f445334ae706381eb62aee1b8537?s=160" width="80" alt="Oli &quot;zilla&quot; Evans" class="circle"></a></li>
             <li class="inline-block px1"><a href="https://twitter.com/_tableflip" title="(╯°□°）╯︵TABLEFLIP"><img src="./img/logos/tableflip.png" width="80" alt="(╯°□°）╯︵TABLEFLIP" class="circle"></a></li>
-            <li class="inline-block px1"><a href="https://twitter.com/richsilvo" title="Rich &quot;react&quot; Silverton"><img src="https://avatars0.githubusercontent.com/u/3180526?v=3&amp;amp;s=160" width="80" alt="Rich &quot;react&quot; Silverton" class="circle"></a></li>
             <li class="inline-block px1"><a href="https://twitter.com/_bmordan" title="Bernard &quot;biscuits&quot; Mordan"><img src="https://avatars3.githubusercontent.com/u/4499581?v=3&amp;amp;s=160" width="80" alt="Bernard &quot;biscuits&quot; Mordan" class="circle"></a></li>
           </ul>
           <p><strong>Get in touch. </strong>Send an email to <strong>hello@tableflip.io </strong>and we'll get back as soon as we can. </p>

@@ -40,9 +40,13 @@ block content
         option As much as possible
         option No thanks
 
-      script.
-        function onSubmit (token) {document.getElementById('startup-form').submit()}
+      hr.my3.hr-table
+
       input(type='hidden' name='subject' value='NEW StartUP!')
-      button.btn.mt2.g-recaptcha(type="submit" data-sitekey='6Ld7yBwUAAAAAGPAgxkTaUIIVaeIP-ZztaS8hbr4' data-callback='onSubmit') Send
+      script.
+        function enableSubmitBtn () {
+          document.getElementById('enableSubmitBtn').disabled = false
+        }
+      .g-recaptcha.inline-block(data-sitekey='6Lc3-DEUAAAAAOs_GCEfgjpVG3Xk1xYGgTzypCAq' data-callback='enableSubmitBtn')
+      button#submit.btn.btn-primary.right.muted(type="submit" disabled="true") Send
       
-      hr.hr-table

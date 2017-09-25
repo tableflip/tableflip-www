@@ -20,6 +20,16 @@ The `src` dir contains the `jade` templates and markdown fragments for the layou
 
 The css in `src/main.css` is processed by [`cssnext`][2], so it'll have vendor prefixes applied automatically where needed, and we can use future css syntax today. `npm run build:css` generates a production ready version in `dist/main.css` that has had all the futuristic parts swapped out for better supported alternatives.
 
+## Publish to Dat
+
+> Originally published thanks to [this article](https://handbook.protozoa.nz/experiments/p2p_github_pages.html)
+
+* Build the site `npm build`
+* Publish changes to Dat
+* Update the hash in `public/.well-known/dat`
+* Publish changes to live site
+* Publish changes to Dat
+
 `(╯°□°）╯︵ ┻━┻`
 
 [1]: http://jade-lang.com/reference/filters/

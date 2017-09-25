@@ -5,7 +5,7 @@ module.exports = function (page) {
 }
 
 function enter (ctx, next) {
-  if (ctx.querystring !== 'sent=true') return console.log(ctx, 'not true')
+  if (ctx.querystring !== 'sent=true') return
   var html = sentTpl()
   document.getElementById('startup-form').innerHTML = html
 }

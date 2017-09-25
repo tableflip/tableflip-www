@@ -90,9 +90,12 @@ block content
               input.input.border-box(id="email", name="email", type="email", required)
               label.label(for="info") Any info
               textarea.textarea.border-box(id="info", name="info", rows="3", required)
+              .g-recaptcha.inline-block(data-sitekey='6Lc3-DEUAAAAAOs_GCEfgjpVG3Xk1xYGgTzypCAq' data-callback='enableSubmitBtn')
               script.
-                function onSubmit (token) {document.getElementById('enquiry-form').submit()}
-              button.btn.btn-primary.g-recaptcha(type="submit" data-sitekey='6Ld7yBwUAAAAAGPAgxkTaUIIVaeIP-ZztaS8hbr4' data-callback='onSubmit') Send
+                function enableSubmitBtn () {
+                  document.getElementById('submit').disabled = false
+                }
+              button#submit.btn.btn-primary.right.muted(type="submit" disabled="true") Send
       
       hr.hr-table.my3
         

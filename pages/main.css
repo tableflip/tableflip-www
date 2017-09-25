@@ -94,6 +94,9 @@ blockquote p {
   border: 0;
   padding: 3px 15px 8px;
 }
+.btn:disabled {
+  opacity: 0.7;
+}
 header {
   position: fixed;
   top: 0;
